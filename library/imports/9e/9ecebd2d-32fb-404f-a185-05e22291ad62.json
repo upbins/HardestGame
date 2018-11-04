@@ -389,23 +389,26 @@
         "__uuid__": "22685770-09a5-4172-a637-9472706a02b8"
       }
     ],
-    "Bullet": {
+    "BulletPrefab": {
       "__uuid__": "bc811610-de05-4307-94fc-a4b1b43fb12e"
     },
-    "BingoBullet": {
+    "BingoBulletPrefab": {
       "__uuid__": "4d263c8f-20ea-4aee-b596-ec30ffc9d696"
     },
-    "FailAlert": {
+    "FailAlertPrefab": {
       "__uuid__": "18eef5d7-bed4-4de5-967d-91b774e53775"
     },
-    "LimitNum": {
+    "LimitNumPrefab": {
       "__uuid__": "edcee16a-21a1-476d-862e-0a6e6d28d77d"
     },
-    "StartTips": {
+    "StartTipsPrefab": {
       "__uuid__": "82503a02-819e-4a51-9a6f-50807a3bd660"
     },
-    "success_alert": {
+    "SuccessAlertPrefab": {
       "__uuid__": "1872b5e9-4c0b-4273-b8ed-a7bd7b10d7f7"
+    },
+    "TimeLablePrefab": {
+      "__uuid__": "f00b819b-1e51-4202-9ea0-52b2cc35c199"
     },
     "_id": "59c8SPzSxC46orAwXZUpva"
   },

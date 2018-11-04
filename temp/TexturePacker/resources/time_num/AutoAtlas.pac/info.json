@@ -1,9 +1,9 @@
 {
   "packedTextures": [
     {
-      "path": "/Users/upbins/CodeProject/CreatorProject/Project-HardestGame/temp/TexturePacker/resources/time_num/AutoAtlas.pac/AutoAtlas-1.png",
+      "path": "/Users/upbins/CodeProject/CreatorProject/HardestGame/temp/TexturePacker/resources/time_num/AutoAtlas.pac/AutoAtlas-1.png",
       "name": "AutoAtlas-1.png",
-      "size": "256x256"
+      "size": "256x512"
     }
   ],
   "unpackedTextures": []

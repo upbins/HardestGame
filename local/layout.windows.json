@@ -12,10 +12,10 @@
       "layout": {
         "children": [
           {
-            "active": 0,
+            "active": 1,
             "children": [
-              "assets",
-              "node-library"
+              "node-library",
+              "assets"
             ],
             "height": 745,
             "type": "panel",
@@ -69,8 +69,8 @@
         "type": "dock-h"
       },
       "panels": [
-        "hierarchy",
         "node-library",
+        "hierarchy",
         "inspector",
         "console",
         "timeline",

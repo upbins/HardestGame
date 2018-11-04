@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.Prefab",
-    "_name": "limit_num",
+    "_name": "time_label",
     "_objFlags": 0,
     "_native": "",
     "data": {
@@ -12,12 +12,12 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "limit_num",
+    "_name": "time_label",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
     "_active": true,
-    "_level": 1,
+    "_level": 3,
     "_components": [
       {
         "__id__": 2
@@ -36,8 +36,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 89,
-      "height": 49
+      "width": 80,
+      "height": 32
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -46,8 +46,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 355,
-      "y": 419,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -72,7 +72,7 @@
     "_id": ""
   },
   {
-    "__type__": "cc.Sprite",
+    "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -81,20 +81,21 @@
     "_enabled": true,
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_spriteFrame": null,
-    "_type": 0,
-    "_sizeMode": 1,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
+    "_useOriginalSize": false,
+    "_string": "30",
+    "_N$string": "30",
+    "_fontSize": 40,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": {
+      "__uuid__": "fa149e2a-7323-4578-a785-49d8a3b1ab36"
     },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_state": 0,
-    "_atlas": null,
+    "_isSystemFontUsed": false,
+    "_spacingX": 0,
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0,
     "_id": ""
   },
   {
@@ -103,9 +104,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "edcee16a-21a1-476d-862e-0a6e6d28d77d"
+      "__id__": 0
     },
-    "fileId": "60pZAhM7hE84CXe7bggRhq",
+    "fileId": "e7filR4ElNgIPDw4mgJ0P9",
     "sync": false
   }
 ]
