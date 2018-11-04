@@ -88,3 +88,42 @@
     at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3344:19)
     at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3367:23)
     at Parser.pp$3.parseExpression (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3306:19)
+2018-11-04T13:53:30.064Z - warn: Error: Ipc will not have a callback. message: scene@renderer:296323
+2018-11-04T13:53:30.066Z - warn: Error: Ipc will not have a callback. message: scene@renderer:296324
+2018-11-04T13:53:30.066Z - warn: Error: Ipc will not have a callback. message: scene@renderer:296325
+2018-11-04T13:53:30.091Z - error: Failed to reset layout: Error: Failed to close panel scene
+    at Object.e._unloadAll (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:2087)
+    at r.waterfall.e (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dock-utils.js:1:5916)
+    at fn (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:746:34)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:1213:16
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:166:37
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:706:43
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:167:37
+    at Object.async.waterfall (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:710:44)
+    at Object.e.reset (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dock-utils.js:1:5899)
+    at EventEmitter.t.ipcRenderer.on (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dock-utils.js:1:8429)
+    at e.reset.e (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dock-utils.js:1:8453)
+    at r.waterfall.e (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dock-utils.js:1:7375)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:52:16
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:696:30
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:167:37
+    at Immediate.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:1206:34)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate [as _immediateCallback] (timers.js:617:5)
+2018-11-04T13:53:30.138Z - error: Failed to load meta 82503a02-819e-4a51-9a6f-50807a3bd660: Failed to query meta info by 82503a02-819e-4a51-9a6f-50807a3bd660
+    at asset.e._loadMeta (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/inspector/panel/index.js:1:6371)
+    at Object.Editor.assetdb.queryMetaInfoByUuid [as callback] (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/inspector/panel/index.js:1:9021)
+    at Object.e._closeAllSessions (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:2534)
+    at EventEmitter.t.ipcRenderer.on (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dock-utils.js:1:8407)
+    at emitTwo (events.js:111:20)
+    at EventEmitter.emit (events.js:194:7)
+2018-11-04T13:53:30.154Z - warn: Failed to send ipc message scene:query-animation-hierarchy to panel scene, panel not found
+2018-11-04T13:55:08.747Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:297316
+2018-11-04T13:55:08.748Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:297319
+2018-11-04T13:55:08.748Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:297320
+2018-11-04T13:55:08.749Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:297321
+2018-11-04T13:55:08.749Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:297322
+2018-11-04T13:55:08.750Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:297323
+2018-11-04T13:55:08.751Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:297324
+2018-11-04T13:59:59.154Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:301685

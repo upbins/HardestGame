@@ -595,8 +595,8 @@
     "relativePath": "resources/tips/ready_go.png"
   },
   "887651a8-2ddb-4591-a96f-c5dfec8bd0e3": {
-    "asset": 1541223216480,
-    "meta": 1541223216492,
+    "asset": 1541341242509,
+    "meta": 1541341242515,
     "relativePath": "resources/animation/StartTips.anim"
   },
   "82503a02-819e-4a51-9a6f-50807a3bd660": {
@@ -670,8 +670,8 @@
     "relativePath": "resources/prefab/time_label.prefab"
   },
   "5cbefd28-1b32-4f4f-af29-85872b9b90a4": {
-    "asset": 1541327212496,
-    "meta": 1541327216197,
+    "asset": 1541341002890,
+    "meta": 1541341198566,
     "relativePath": "scripts/game.js.js"
   }
 }

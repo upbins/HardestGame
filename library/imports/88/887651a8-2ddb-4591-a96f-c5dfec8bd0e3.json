@@ -91,5 +91,21 @@
       ]
     }
   },
-  "events": []
+  "events": [
+    {
+      "frame": 3.033333333333333,
+      "func": "AnimationEnd",
+      "params": []
+    },
+    {
+      "frame": 3.033333333333333,
+      "func": "",
+      "params": []
+    },
+    {
+      "frame": 3.033333333333333,
+      "func": "",
+      "params": []
+    }
+  ]
 }

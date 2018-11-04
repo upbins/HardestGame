@@ -58,6 +58,9 @@ cc.Class({
         this.length = this.LevelsPrefab.length;
         this.GameStart();
     },
+    AnimationEnd: function AnimationEnd() {
+        this.InitLevelUi(this.level);
+    },
     InitLevelUi: function InitLevelUi(level) {
         if (level > this.length) {
             cc.log("全部通关啦");
@@ -68,7 +71,6 @@ cc.Class({
             this.node.removeAllChildren(true);
         }
         this.level = level;
-
         var level = level - 1;
         var LevelArray = this.LevelArray[level];
         console.log("@@@InitLevelUi", this.LevelsPrefab.length, level);
@@ -114,7 +116,7 @@ cc.Class({
                     this.unschedule(this.timer);
                 }
                 cc.log("时间到了");
-                this.GameOver();
+                this.GameContinue();
             }
         }.bind(this);
         this.schedule(this.timer, 1, this.LimitTime - 1, 0);
@@ -140,19 +142,30 @@ cc.Class({
         this.IsPause = false;
         this.IsOver = false;
         this.IsCanTap = true;
-        this.InitLevelUi(this.level);
         this.TapHandle(); //设置触摸
+        this.StartTips = cc.instantiate(this.StartTipsPrefab);
+        this.node.addChild(this.StartTips);
     },
     GamePause: function GamePause() {
         this.IsCanTap = false;
         this.IsPause = true;
     },
     GameContinue: function GameContinue(resetLevel) {
-        this.IsPause = false;
-        this.IsCanTap = true;
+        var self = this;
+        self.IsPause = false;
+        self.IsCanTap = true;
         if (this.IsOver || resetLevel) {
             this.IsOver = false;
         }
+        self.SuccessAlert = cc.instantiate(self.SuccessAlertPrefab);
+        self.node.addChild(self.SuccessAlert);
+        self.SuccessAlert.active = true;
+        self.NextBtn = cc.find("next_btn", self.SuccessAlert);
+        CreateHelper.setNodeClickEvent(self.NextBtn, function () {
+            self.level += 1;
+            cc.log("开始下一关", self.level);
+            self.InitLevelUi(self.level);
+        });
     },
     GameOver: function GameOver() {
         var self = this;
@@ -161,8 +174,8 @@ cc.Class({
         self.FailAlert = cc.instantiate(self.FailAlertPrefab);
         self.node.addChild(self.FailAlert);
         self.FailAlert.active = true;
-        self.NextBtn = cc.find("next_btn", self.FailAlert);
-        CreateHelper.setNodeClickEvent(self.NextBtn, function () {
+        self.ResetBtn = cc.find("next_btn", self.FailAlert);
+        CreateHelper.setNodeClickEvent(self.ResetBtn, function () {
             self.FailAlert.active = false;
             self.InitLevelUi(1);
         });
@@ -172,7 +185,7 @@ cc.Class({
         if (self.node) {
             CreateHelper.setNodeClickEvent(self.node, function () {
                 cc.log("======>", self.isPause, self.IsCanTap, self.IsCanTap && !self.isPause);
-                if (self.IsCanTap && !self.isPause) {
+                if (self.IsCanTap && !self.isPause && !self.isOver) {
                     self.level = self.level + 1;
                     self.InitLevelUi(self.level);
                 }
