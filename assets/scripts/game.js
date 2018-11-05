@@ -8,8 +8,7 @@
 //  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
 var CreateHelper = require("/CreatorHelper.js");
-var UnitTools = require("/UnitTools.js");
-cc.Class({
+var Game = cc.Class({
     extends: cc.Component,
 
     properties: {
@@ -56,24 +55,26 @@ cc.Class({
         this.IsCanTap = true;
         this.IsOver = true;
         this.length = this.LevelsPrefab.length;
+        this.IsInit = false;
         this.GameStart()
-    },
-    AnimationEnd(){
-        this.InitLevelUi(this.level)
     },
     InitLevelUi(level) {
         if (level > this.length) {
             cc.log("全部通关啦")
             return
         }
-
         if (this.node){
             this.node.removeAllChildren(true);
+        }
+        this.IsSendBullet = false;
+        this.IsCanTap = false;
+        this.IsInit = false;
+        if (this.timer) {
+            this.unschedule(this.timer)
         }
         this.level = level;
         var level = level - 1;
         var LevelArray = this.LevelArray[level]
-        console.log("@@@InitLevelUi", this.LevelsPrefab.length, level)
         var LevelPrefab = this.LevelsPrefab[level]
         var LevelUi = cc.instantiate(LevelPrefab);
         this.circle = cc.find("circle", LevelUi); 
@@ -92,11 +93,19 @@ cc.Class({
         this.OffsetAngle = LevelArray[2]
         this.LimitTime = LevelArray[1]
         this.waitnum = LevelArray[0]
-        cc.log("=======>", this.LimitTime, this.waitnum, LevelArray)
         this.TrunAngle = 0
+        this.CurLimitNum = 0
         this.UpdateLimitNum(0)
-        this.UpdateTimer(this.LimitTime)
-        this.CreateBullet()
+        this.Bullet = this.CreateBullet()
+        this.StartTips = cc.instantiate(this.StartTipsPrefab);
+        this.node.addChild(this.StartTips,99)
+        var StartAnimationCom = this.StartTips.getComponent(cc.Animation)
+        StartAnimationCom.AnimationEnd = function (){
+            this.StartTips.active = false
+            this.IsCanTap = true;
+            this.IsInit = true
+            this.UpdateTimer(this.LimitTime)
+        }.bind(this)
     },
     //更新倒计时的
     UpdateTimer(time){
@@ -133,15 +142,24 @@ cc.Class({
     CreateBullet() {
         var Bullet = cc.instantiate(this.BulletPrefab)
         this.node.addChild(Bullet);
+        return Bullet
     },
+    //检测碰撞跟随转
+    // CheckCollision(){
+    //     var self = this
+    //     // self.Bullet.active = false;
+    //     self.CurLimitNum =+ 1;
+    //     self.UpdateLimitNum(self.CurLimitNum)
+    //     cc.log("CheckCollision",self.CurLimitNum)
+    //     self.Bullet = this.CreateBullet()
+    // },
     GameStart() {
         this.level = 1;
         this.IsPause = false;
         this.IsOver = false;
-        this.IsCanTap = true;
+        this.IsCanTap = false;
         this.TapHandle()//设置触摸
-        this.StartTips = cc.instantiate(this.StartTipsPrefab);
-        this.node.addChild(this.StartTips)
+        this.InitLevelUi(this.level);
     },
     GamePause() {
         this.IsCanTap = false;
@@ -184,18 +202,24 @@ cc.Class({
             CreateHelper.setNodeClickEvent(self.node, function () {
                 cc.log("======>",self.isPause,self.IsCanTap,self.IsCanTap && !self.isPause)
                 if (self.IsCanTap && !self.isPause && !self.isOver) {
-                    self.level = self.level + 1
-                    self.InitLevelUi(self.level)
+                    self.IsSendBullet = true
+                    cc.log("======>2")
+                    // self.level = self.level + 1
+                    // self.InitLevelUi(self.level)
                 }
             })
         }
     },
     //更新位置
     update(dt) {
-        if (!this.isPause && !this.isOver) {
+        if (!this.isPause && !this.isOver && this.IsInit) {
             this.TrunAngle += this.OffsetAngle
             this.circle.rotation = this.TrunAngle;
             if (this.TrunAngle >= 360) this.TrunAngle = 0;
         }
+        if (this.Bullet && this.IsSendBullet) {
+            this.Bullet.y += 10;
+        }
     },
 });
+module.exports = Game;

@@ -3,7 +3,7 @@
   "_name": "StartTips",
   "_objFlags": 0,
   "_native": "",
-  "_duration": 3.033333333333333,
+  "_duration": 4.033333333333333,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -81,7 +81,7 @@
           }
         },
         {
-          "frame": 3.033333333333333,
+          "frame": 4.033333333333333,
           "value": {
             "__type__": "cc.Vec2",
             "x": 1,
@@ -93,17 +93,17 @@
   },
   "events": [
     {
-      "frame": 3.033333333333333,
+      "frame": 4,
       "func": "AnimationEnd",
       "params": []
     },
     {
-      "frame": 3.033333333333333,
+      "frame": 4,
       "func": "",
       "params": []
     },
     {
-      "frame": 3.033333333333333,
+      "frame": 4,
       "func": "",
       "params": []
     }

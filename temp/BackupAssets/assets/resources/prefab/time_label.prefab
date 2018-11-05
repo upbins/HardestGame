@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.Prefab",
-    "_name": "tiledtile",
+    "_name": "",
     "_objFlags": 0,
     "_native": "",
     "data": {
@@ -12,12 +12,12 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "New TiledTile",
+    "_name": "time_label",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
+    "_tag": -1,
     "_active": true,
-    "_level": 1,
     "_components": [
       {
         "__id__": 2
@@ -26,6 +26,7 @@
     "_prefab": {
       "__id__": 3
     },
+    "_id": "",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -34,56 +35,56 @@
       "b": 255,
       "a": 255
     },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
-    },
+    "_cascadeOpacityEnabled": true,
     "_anchorPoint": {
       "__type__": "cc.Vec2",
       "x": 0.5,
       "y": 0.5
     },
-    "_position": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_scale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 40,
+      "height": 32
     },
     "_rotationX": 0,
     "_rotationY": 0,
-    "_quat": {
-      "__type__": "cc.Quat",
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
       "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
+      "y": 0
     },
     "_skewX": 0,
     "_skewY": 0,
-    "_localZOrder": 45,
-    "groupIndex": 0,
-    "_id": ""
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
   },
   {
-    "__type__": "cc.TiledTile",
+    "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 1
     },
     "_enabled": true,
-    "_x": 0,
-    "_y": 0,
-    "_gid": 6,
-    "_layer": null,
-    "_id": "39h1tJvWtC8oLyzYKulleV"
+    "_useOriginalSize": false,
+    "_actualFontSize": 40,
+    "_fontSize": 40,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": {
+      "__uuid__": "fa149e2a-7323-4578-a785-49d8a3b1ab36"
+    },
+    "_isSystemFontUsed": false,
+    "_spacingX": 0,
+    "_N$string": "0",
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -91,9 +92,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "0e42ba95-1fa1-46aa-b2cf-143cd1bcee2c"
+      "__uuid__": "f00b819b-1e51-4202-9ea0-52b2cc35c199"
     },
-    "fileId": "fb1JS09SVFapQy1+PoRN4F",
+    "fileId": "e7filR4ElNgIPDw4mgJ0P9",
     "sync": false
   }
 ]

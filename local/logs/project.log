@@ -1,129 +1,55 @@
-2018-11-04T06:29:08.751Z - normal: Load ~/.CocosCreator/settings.json
-2018-11-04T06:29:08.754Z - normal: checking language setting...
-2018-11-04T06:29:08.754Z - normal: Language: zh
-2018-11-04T06:29:09.249Z - success: protocol editor-framework registered
-2018-11-04T06:29:09.250Z - success: protocol app registered
-2018-11-04T06:29:09.250Z - success: protocol theme registered
-2018-11-04T06:29:09.250Z - success: protocol packages registered
-2018-11-04T06:29:09.251Z - success: protocol unpack registerred
-2018-11-04T06:29:09.251Z - success: protocol disable-commonjs registerred
-2018-11-04T06:29:09.463Z - normal: connected!
-2018-11-04T06:29:09.466Z - normal: Check project /Users/upbins/CodeProject/CreatorProject/HardestGame
-2018-11-04T06:29:09.469Z - normal: Initializing project /Users/upbins/CodeProject/CreatorProject/HardestGame
-2018-11-04T06:29:09.472Z - normal: Initializing Cocos2d
-2018-11-04T06:29:10.149Z - normal: Initializing Asset Database
-2018-11-04T06:29:10.184Z - success: protocol uuid registerred
-2018-11-04T06:29:10.185Z - success: protocol db registerred
-2018-11-04T06:29:10.185Z - success: protocol thumbnail registerred
-2018-11-04T06:29:10.185Z - normal: Loading editor/builtin packages
-2018-11-04T06:29:10.325Z - success: assets loaded
-2018-11-04T06:29:10.332Z - success: builder loaded
-2018-11-04T06:29:10.335Z - success: cocos-analytics loaded
-2018-11-04T06:29:10.340Z - success: console loaded
-2018-11-04T06:29:10.373Z - success: fb-instant-games loaded
-2018-11-04T06:29:10.378Z - success: hierarchy loaded
-2018-11-04T06:29:10.382Z - success: inspector loaded
-2018-11-04T06:29:10.384Z - success: keystore loaded
-2018-11-04T06:29:10.391Z - success: node-library loaded
-2018-11-04T06:29:10.394Z - success: package-asset loaded
-2018-11-04T06:29:10.395Z - success: preferences loaded
-2018-11-04T06:29:10.399Z - success: project-exporter loaded
-2018-11-04T06:29:10.413Z - success: project-importer loaded
-2018-11-04T06:29:10.416Z - success: project-settings loaded
-2018-11-04T06:29:10.421Z - success: ui-kit loaded
-2018-11-04T06:29:10.425Z - success: scene loaded
-2018-11-04T06:29:10.426Z - success: sprite-editor loaded
-2018-11-04T06:29:10.431Z - success: store loaded
-2018-11-04T06:29:10.436Z - success: timeline loaded
-2018-11-04T06:29:10.436Z - normal: Loading builtin packages
-2018-11-04T06:29:10.445Z - success: asset-db-debugger loaded
-2018-11-04T06:29:10.446Z - success: color-picker loaded
-2018-11-04T06:29:10.448Z - success: jsb-adapter loaded
-2018-11-04T06:29:10.452Z - success: package-manager loaded
-2018-11-04T06:29:10.558Z - success: qqplay-adapter loaded
-2018-11-04T06:29:10.565Z - success: sdkbox loaded
-2018-11-04T06:29:10.571Z - success: tester loaded
-2018-11-04T06:29:10.576Z - success: ui-grid loaded
-2018-11-04T06:29:10.580Z - success: ui-kit-preview-extra loaded
-2018-11-04T06:29:10.584Z - success: ui-kit-preview loaded
-2018-11-04T06:29:10.588Z - success: ui-tree loaded
-2018-11-04T06:29:10.589Z - success: weapp-adapter loaded
-2018-11-04T06:29:11.520Z - normal: Loading packages
-2018-11-04T06:29:11.527Z - normal: Watching packages
-2018-11-04T06:29:11.584Z - normal: Run Application
-2018-11-04T06:29:12.165Z - success: preview server running at http://localhost:7456
-2018-11-04T07:00:59.457Z - failed: [db-task][sync-changes] Failed to import asset /Users/upbins/CodeProject/CreatorProject/HardestGame/assets/scripts/game.js.js, message: Compile error: SyntaxError: /Users/upbins/CodeProject/CreatorProject/HardestGame/assets/scripts/game.js.js: Unexpected token (105:21)
-  103 |     },
-  104 |     GameStart() {
-> 105 |         this.level = ;
-      |                      ^
-  106 |         this.IsPause = false;
-  107 |         this.IsOver = false;
-  108 |         this.IsCanTap = true;
-    at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4454:13)
-    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1761:8)
-    at Parser.pp$3.parseExprAtom (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3750:12)
-    at Parser.pp$3.parseExprSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3494:19)
-    at Parser.pp$3.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3474:19)
-    at Parser.pp$3.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3404:19)
-    at Parser.pp$3.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3381:19)
-    at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3344:19)
-    at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3367:23)
-    at Parser.pp$3.parseExpression (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3306:19)
-2018-11-04T07:08:24.612Z - failed: [db-task][sync-changes] Failed to import asset /Users/upbins/CodeProject/CreatorProject/HardestGame/assets/scripts/game.js.js, message: Compile error: SyntaxError: /Users/upbins/CodeProject/CreatorProject/HardestGame/assets/scripts/game.js.js: Unexpected token (89:8)
-  87 |         this.LimitNum = cc.instantiate(this.LimitNumPrefab)
-  88 |         this.LimitNum.getComponent(cc.Sprite).spriteFrame = 
-> 89 |         if (LevelUi) {
-     |         ^
-  90 |             this.node.addChild(LevelUi);
-  91 |         }
-  92 |         LevelUi.addChild(this.Bullet);
-    at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4454:13)
-    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1761:8)
-    at Parser.pp$3.parseExprAtom (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3750:12)
-    at Parser.pp$3.parseExprSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3494:19)
-    at Parser.pp$3.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3474:19)
-    at Parser.pp$3.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3404:19)
-    at Parser.pp$3.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3381:19)
-    at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3344:19)
-    at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3367:23)
-    at Parser.pp$3.parseExpression (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3306:19)
-2018-11-04T13:53:30.064Z - warn: Error: Ipc will not have a callback. message: scene@renderer:296323
-2018-11-04T13:53:30.066Z - warn: Error: Ipc will not have a callback. message: scene@renderer:296324
-2018-11-04T13:53:30.066Z - warn: Error: Ipc will not have a callback. message: scene@renderer:296325
-2018-11-04T13:53:30.091Z - error: Failed to reset layout: Error: Failed to close panel scene
-    at Object.e._unloadAll (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:2087)
-    at r.waterfall.e (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dock-utils.js:1:5916)
-    at fn (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:746:34)
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:1213:16
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:166:37
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:706:43
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:167:37
-    at Object.async.waterfall (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:710:44)
-    at Object.e.reset (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dock-utils.js:1:5899)
-    at EventEmitter.t.ipcRenderer.on (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dock-utils.js:1:8429)
-    at e.reset.e (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dock-utils.js:1:8453)
-    at r.waterfall.e (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dock-utils.js:1:7375)
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:52:16
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:696:30
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:167:37
-    at Immediate.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:1206:34)
-    at runCallback (timers.js:672:20)
-    at tryOnImmediate (timers.js:645:5)
-    at processImmediate [as _immediateCallback] (timers.js:617:5)
-2018-11-04T13:53:30.138Z - error: Failed to load meta 82503a02-819e-4a51-9a6f-50807a3bd660: Failed to query meta info by 82503a02-819e-4a51-9a6f-50807a3bd660
-    at asset.e._loadMeta (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/inspector/panel/index.js:1:6371)
-    at Object.Editor.assetdb.queryMetaInfoByUuid [as callback] (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/inspector/panel/index.js:1:9021)
-    at Object.e._closeAllSessions (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:2534)
-    at EventEmitter.t.ipcRenderer.on (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ui/utils/dock-utils.js:1:8407)
-    at emitTwo (events.js:111:20)
-    at EventEmitter.emit (events.js:194:7)
-2018-11-04T13:53:30.154Z - warn: Failed to send ipc message scene:query-animation-hierarchy to panel scene, panel not found
-2018-11-04T13:55:08.747Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:297316
-2018-11-04T13:55:08.748Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:297319
-2018-11-04T13:55:08.748Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:297320
-2018-11-04T13:55:08.749Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:297321
-2018-11-04T13:55:08.749Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:297322
-2018-11-04T13:55:08.750Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:297323
-2018-11-04T13:55:08.751Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:297324
-2018-11-04T13:59:59.154Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:301685
+2018-11-05T10:53:37.026Z - normal: Load ~/.CocosCreator/settings.json
+2018-11-05T10:53:37.029Z - normal: checking language setting...
+2018-11-05T10:53:37.030Z - normal: Language: zh
+2018-11-05T10:53:38.624Z - success: protocol editor-framework registered
+2018-11-05T10:53:38.624Z - success: protocol app registered
+2018-11-05T10:53:38.624Z - success: protocol theme registered
+2018-11-05T10:53:38.624Z - success: protocol packages registered
+2018-11-05T10:53:38.624Z - success: protocol unpack registerred
+2018-11-05T10:53:38.624Z - success: protocol disable-commonjs registerred
+2018-11-05T10:53:38.849Z - normal: connected!
+2018-11-05T10:53:38.851Z - normal: Check project D:\CocosCreator\HardestGame
+2018-11-05T10:53:38.853Z - normal: Initializing project D:\CocosCreator\HardestGame
+2018-11-05T10:53:38.855Z - normal: Initializing Cocos2d
+2018-11-05T10:53:39.076Z - normal: Initializing Asset Database
+2018-11-05T10:53:39.112Z - success: protocol uuid registerred
+2018-11-05T10:53:39.112Z - success: protocol db registerred
+2018-11-05T10:53:39.112Z - success: protocol thumbnail registerred
+2018-11-05T10:53:39.113Z - normal: Loading editor/builtin packages
+2018-11-05T10:53:39.249Z - success: assets loaded
+2018-11-05T10:53:39.251Z - success: builder loaded
+2018-11-05T10:53:39.253Z - success: cocos-analytics loaded
+2018-11-05T10:53:39.255Z - success: console loaded
+2018-11-05T10:53:39.293Z - success: fb-instant-games loaded
+2018-11-05T10:53:39.298Z - success: hierarchy loaded
+2018-11-05T10:53:39.301Z - success: inspector loaded
+2018-11-05T10:53:39.303Z - success: keystore loaded
+2018-11-05T10:53:39.306Z - success: node-library loaded
+2018-11-05T10:53:39.307Z - success: package-asset loaded
+2018-11-05T10:53:39.308Z - success: preferences loaded
+2018-11-05T10:53:39.309Z - success: project-exporter loaded
+2018-11-05T10:53:39.325Z - success: project-importer loaded
+2018-11-05T10:53:39.326Z - success: project-settings loaded
+2018-11-05T10:53:39.329Z - success: ui-kit loaded
+2018-11-05T10:53:39.332Z - success: scene loaded
+2018-11-05T10:53:39.333Z - success: sprite-editor loaded
+2018-11-05T10:53:39.336Z - success: store loaded
+2018-11-05T10:53:39.339Z - success: timeline loaded
+2018-11-05T10:53:39.339Z - normal: Loading builtin packages
+2018-11-05T10:53:39.342Z - success: asset-db-debugger loaded
+2018-11-05T10:53:39.343Z - success: code-editor loaded
+2018-11-05T10:53:39.344Z - success: color-picker loaded
+2018-11-05T10:53:39.346Z - success: package-manager loaded
+2018-11-05T10:53:39.347Z - success: qqplay-adapter loaded
+2018-11-05T10:53:39.353Z - success: sdkbox loaded
+2018-11-05T10:53:39.356Z - success: tester loaded
+2018-11-05T10:53:39.360Z - success: ui-grid loaded
+2018-11-05T10:53:39.361Z - success: ui-kit-preview-extra loaded
+2018-11-05T10:53:39.363Z - success: ui-kit-preview loaded
+2018-11-05T10:53:39.366Z - success: ui-tree loaded
+2018-11-05T10:53:39.366Z - success: weapp-adapter loaded
+2018-11-05T10:53:40.484Z - normal: Loading packages
+2018-11-05T10:53:40.490Z - normal: Watching packages
+2018-11-05T10:53:40.920Z - normal: Run Application
+2018-11-05T10:53:41.568Z - success: preview server running at http://localhost:7456
+2018-11-05T11:36:08.072Z - info: shutdown preview server
