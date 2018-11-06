@@ -8,15 +8,16 @@ cc.Class({
     // use this for initialization
     onLoad: function () {
         this.GameObject = CacheObjects.Game
+        this.isshow = false
         cc.director.getCollisionManager().enabled = true;
         cc.director.getCollisionManager().enabledDebugDraw = true;
         cc.director.getCollisionManager().enabledDrawBoundingBox = true;
     },
 
     onCollisionEnter: function (other) {
-        if (other && other.tag == CacheObjects.CollsionTypeOne)
-        {
-            this.GameObject.CheckCollision()
+        if (other.tag == CacheObjects.CollsionTypeOne) {
+            cc.log("BulletCollsion");
+            this.GameObject.GameOver()
         }
     },
 

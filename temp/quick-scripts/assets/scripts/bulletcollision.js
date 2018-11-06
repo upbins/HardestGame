@@ -1,6 +1,6 @@
-(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/scripts/collision.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, '383acDDBOhHfrAzNltPD7HY', 'collision', __filename);
-// scripts/collision.js
+(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/scripts/bulletcollision.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
+cc._RF.push(module, 'a2b0dOUjUNOoqQnVieefGAf', 'bulletcollision', __filename);
+// scripts/bulletcollision.js
 
 "use strict";
 
@@ -12,14 +12,15 @@ cc.Class({
     // use this for initialization
     onLoad: function onLoad() {
         this.GameObject = CacheObjects.Game;
+        this.isshow = false;
         cc.director.getCollisionManager().enabled = true;
         cc.director.getCollisionManager().enabledDebugDraw = true;
         cc.director.getCollisionManager().enabledDrawBoundingBox = true;
     },
 
     onCollisionEnter: function onCollisionEnter(other) {
-        if (other && other.tag == CacheObjects.CollsionTypeOne) {
-            this.GameObject.CheckCollision();
+        if (other.tag == CacheObjects.CollsionTypeOne) {
+            cc.log("BulletCollsion");
         }
     },
 
@@ -40,5 +41,5 @@ cc._RF.pop();
             });
         }
         })();
-        //# sourceMappingURL=collision.js.map
+        //# sourceMappingURL=bulletcollision.js.map
         

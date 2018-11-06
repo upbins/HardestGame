@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, '383acDDBOhHfrAzNltPD7HY', 'collision');
-// scripts/collision.js
+cc._RF.push(module, 'a2b0dOUjUNOoqQnVieefGAf', 'bulletcollision');
+// scripts/bulletcollision.js
 
 "use strict";
 
@@ -12,14 +12,15 @@ cc.Class({
     // use this for initialization
     onLoad: function onLoad() {
         this.GameObject = CacheObjects.Game;
+        this.isshow = false;
         cc.director.getCollisionManager().enabled = true;
         cc.director.getCollisionManager().enabledDebugDraw = true;
         cc.director.getCollisionManager().enabledDrawBoundingBox = true;
     },
 
     onCollisionEnter: function onCollisionEnter(other) {
-        if (other && other.tag == CacheObjects.CollsionTypeOne) {
-            this.GameObject.CheckCollision();
+        if (other.tag == CacheObjects.CollsionTypeOne) {
+            cc.log("BulletCollsion");
         }
     },
 

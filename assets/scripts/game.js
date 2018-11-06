@@ -7,7 +7,8 @@
 // Learn life-cycle callbacks:
 //  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
-var CreateHelper = require("/CreatorHelper.js");
+var CreateHelper = require("CreatorHelper.js");
+var CacheObjects = require("CacheObject.js")
 var Game = cc.Class({
     extends: cc.Component,
 
@@ -27,9 +28,11 @@ var Game = cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
-
+    onLoad () {
+        CacheObjects.Game = this;
+    },
     start() {
+
         this.InitConfig();
     },
     //初始化相关关卡数据
@@ -82,6 +85,7 @@ var Game = cc.Class({
         this.limit_bg = cc.find("limit_bg",LevelUi);
         this.LimitNum = cc.instantiate(this.LimitNumPrefab)
         this.TimeLabel = cc.instantiate(this.TimeLablePrefab)
+        this.bulletNode =  cc.find("bulletNode",LevelUi);
         this.TimeLabel.x = -357
         this.TimeLabel.y = 455
         if (LevelUi) {
@@ -90,6 +94,7 @@ var Game = cc.Class({
         }
         LevelUi.addChild(this.TimeLabel)
         LevelUi.addChild(this.LimitNum)
+        this.circle.zIndex = 2
         this.OffsetAngle = LevelArray[2]
         this.LimitTime = LevelArray[1]
         this.waitnum = LevelArray[0]
@@ -124,14 +129,19 @@ var Game = cc.Class({
                     this.unschedule(this.timer)
                 }
                 cc.log("时间到了")
-                this.GameContinue()
+                this.GameOver()
             }
         }.bind(this);
         this.schedule(this.timer, 1, this.LimitTime-1, 0);
     },
     //更新当前插中数字的
     UpdateLimitNum(num){
-        if (this.LimitNum){
+        if (num >= this.waitnum){
+            this.GameContinue()
+            return;
+        }
+        if (this.LimitNum)
+        {
             var Name = "resources/limit_num/"+num+".png"
             var RealPath = CreateHelper.getRealPath(Name)
             var Sp = this.LimitNum.getComponent(cc.Sprite)
@@ -145,14 +155,29 @@ var Game = cc.Class({
         return Bullet
     },
     //检测碰撞跟随转
-    // CheckCollision(){
-    //     var self = this
-    //     // self.Bullet.active = false;
-    //     self.CurLimitNum =+ 1;
-    //     self.UpdateLimitNum(self.CurLimitNum)
-    //     cc.log("CheckCollision",self.CurLimitNum)
-    //     self.Bullet = this.CreateBullet()
-    // },
+    CheckCollision(){
+        var self = this
+        self.Bullet.active = false;
+        self.CurLimitNum += 1;
+        self.IsSendBullet = false
+        self.UpdateLimitNum(self.CurLimitNum)
+        cc.log("CheckoutCollsion",self.Bullet.x,self.Bullet.y,self.TrunAngle,self.CurLimitNum)
+        this.CreateBingoBullet()
+        self.Bullet = this.CreateBullet()
+    },
+    CreateBingoBullet() {
+        var BingoBullet = cc.instantiate(this.BingoBulletPrefab)
+        this.RotationCircles.push(BingoBullet)
+        var x = Math.sin(Math.PI / 180 * this.TrunAngle) * 200
+        var y = Math.cos(Math.PI / 180 * this.TrunAngle + 180) * 200
+        cc.log("CreateBingoBullet",x,y)
+        BingoBullet.x = 0;
+        BingoBullet.y = y
+        this.bulletNode.addChild(BingoBullet,1);
+    },
+    resetPosition() {
+    },
+    //游戏开始
     GameStart() {
         this.level = 1;
         this.IsPause = false;
@@ -203,9 +228,7 @@ var Game = cc.Class({
                 cc.log("======>",self.isPause,self.IsCanTap,self.IsCanTap && !self.isPause)
                 if (self.IsCanTap && !self.isPause && !self.isOver) {
                     self.IsSendBullet = true
-                    cc.log("======>2")
-                    // self.level = self.level + 1
-                    // self.InitLevelUi(self.level)
+                    self.isCanTap = false
                 }
             })
         }
@@ -215,11 +238,16 @@ var Game = cc.Class({
         if (!this.isPause && !this.isOver && this.IsInit) {
             this.TrunAngle += this.OffsetAngle
             this.circle.rotation = this.TrunAngle;
+            this.bulletNode.rotation = this.TrunAngle;
             if (this.TrunAngle >= 360) this.TrunAngle = 0;
         }
         if (this.Bullet && this.IsSendBullet) {
             this.Bullet.y += 10;
         }
+        // var lens = this.rotationCircles.length;
+        // for(i = 0; i < lens; i++){
+        //     //this.rotationCircles[i].update(this.rotationSpeed);
+        // }
     },
 });
 module.exports = Game;
