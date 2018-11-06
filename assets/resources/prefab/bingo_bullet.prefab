@@ -106,12 +106,12 @@
     "_offset": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 0
+      "y": -43
     },
     "_size": {
       "__type__": "cc.Size",
       "width": 45,
-      "height": 191
+      "height": 105
     }
   },
   {

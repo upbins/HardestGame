@@ -13,8 +13,8 @@ cc.Class({
     onLoad: function onLoad() {
         this.GameObject = CacheObjects.Game;
         cc.director.getCollisionManager().enabled = true;
-        cc.director.getCollisionManager().enabledDebugDraw = true;
-        cc.director.getCollisionManager().enabledDrawBoundingBox = true;
+        // cc.director.getCollisionManager().enabledDebugDraw = true;
+        // cc.director.getCollisionManager().enabledDrawBoundingBox = true;
     },
 
     onCollisionEnter: function onCollisionEnter(other) {

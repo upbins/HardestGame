@@ -415,8 +415,8 @@
     "relativePath": "resources\\prefab"
   },
   "9110c6f0-0f27-4263-aeeb-a0498a6e886d": {
-    "asset": 1541480515835,
-    "meta": 1541480515854,
+    "asset": 1541502212947,
+    "meta": 1541502212955,
     "relativePath": "resources\\prefab\\level1.prefab"
   },
   "95f4e60b-0f22-4934-a948-be5511a63b5a": {
@@ -460,8 +460,8 @@
     "relativePath": "resources\\level\\2\\bg2.png"
   },
   "c7af0b40-e47e-4951-8d8e-41e7166cbdaa": {
-    "asset": 1541380798096,
-    "meta": 1541380986048,
+    "asset": 1541502240484,
+    "meta": 1541502240491,
     "relativePath": "resources\\prefab\\level2.prefab"
   },
   "4ca45b19-34cb-4cac-aaa4-0b5925241592": {
@@ -510,18 +510,18 @@
     "relativePath": "resources\\level\\5\\bg5.png"
   },
   "f8b03867-b47f-4386-bcad-980af2c54d22": {
-    "asset": 1541380798096,
-    "meta": 1541380986050,
+    "asset": 1541502235075,
+    "meta": 1541502235083,
     "relativePath": "resources\\prefab\\level3.prefab"
   },
   "8dc6c453-78c5-4cba-b349-6bd3de8a4b07": {
-    "asset": 1541380798097,
-    "meta": 1541380986051,
+    "asset": 1541502275636,
+    "meta": 1541502275642,
     "relativePath": "resources\\prefab\\level4.prefab"
   },
   "22685770-09a5-4172-a637-9472706a02b8": {
-    "asset": 1541380798098,
-    "meta": 1541380986053,
+    "asset": 1541502281658,
+    "meta": 1541502281667,
     "relativePath": "resources\\prefab\\level5.prefab"
   },
   "df3f0c93-32f1-40d0-936b-9e4cba0973de": {
@@ -605,8 +605,8 @@
     "relativePath": "resources\\prefab\\limit_num.prefab"
   },
   "4d263c8f-20ea-4aee-b596-ec30ffc9d696": {
-    "asset": 1541480547042,
-    "meta": 1541480547050,
+    "asset": 1541505082225,
+    "meta": 1541505082233,
     "relativePath": "resources\\prefab\\bingo_bullet.prefab"
   },
   "bc811610-de05-4307-94fc-a4b1b43fb12e": {
@@ -649,24 +649,24 @@
     "meta": 1541417275107,
     "relativePath": "resources\\prefab\\time_label.prefab"
   },
-  "9d4b5b38-86a3-45b6-92cb-6f09dcf65d30": {
-    "asset": 1541474509567,
-    "meta": 1541474526819,
-    "relativePath": "scripts\\CacheObject.js"
-  },
-  "a2b0d394-8d43-4ea2-a427-56279e7c601f": {
-    "asset": 1541479258860,
-    "meta": 1541479380991,
-    "relativePath": "scripts\\bulletcollision.js"
-  },
   "383ac0c3-04e8-477e-b033-365b4f0fb1d8": {
-    "asset": 1541479296683,
-    "meta": 1541479381084,
+    "asset": 1541495112917,
+    "meta": 1541495299935,
     "relativePath": "scripts\\collision.js"
   },
+  "a2b0d394-8d43-4ea2-a427-56279e7c601f": {
+    "asset": 1541505092284,
+    "meta": 1541505115057,
+    "relativePath": "scripts\\bulletcollision.js"
+  },
+  "9d4b5b38-86a3-45b6-92cb-6f09dcf65d30": {
+    "asset": 1541505459300,
+    "meta": 1541505489988,
+    "relativePath": "scripts\\CacheObject.js"
+  },
   "3998818d-6c7d-46b0-8613-87eccb257795": {
-    "asset": 1541480359299,
-    "meta": 1541480364874,
+    "asset": 1541505488359,
+    "meta": 1541505489989,
     "relativePath": "scripts\\game.js"
   }
 }
