@@ -82,10 +82,10 @@ var Game = cc.Class({
         }
         LevelUi.addChild(this.TimeLabel);
         LevelUi.addChild(this.LimitNum);
-        this.circle.zIndex = 2;
-        this.OffsetAngle = LevelArray[2];
-        this.LimitTime = LevelArray[1];
-        this.waitnum = LevelArray[0];
+        // this.circle.zIndex = 2
+        this.OffsetAngle = LevelArray.RoteSpeed;
+        this.LimitTime = LevelArray.Time;
+        this.waitnum = LevelArray.TagetNum;
         this.TrunAngle = 0;
         this.CurLimitNum = 0;
         this.UpdateLimitNum(0);
@@ -215,9 +215,7 @@ var Game = cc.Class({
         var self = this;
         if (self.node) {
             CreateHelper.setNodeClickEvent(self.node, function () {
-                cc.log("======>", self.isPause, self.IsCanTap, self.isOver);
                 if (self.IsCanTap && !self.isPause) {
-                    cc.log("====>发射成功");
                     self.IsSendBullet = true;
                     self.isCanTap = false;
                     self.Bullet.active = true;
@@ -228,12 +226,16 @@ var Game = cc.Class({
         }
     },
 
+    //旋转的过程中的一些特殊操作
+    ChangeRandomDir: function ChangeRandomDir() {},
+
     //更新位置
     update: function update(dt) {
         if (!this.isPause) {
             if (!this.isOver) {
                 if (this.IsInit) {
-                    this.TrunAngle = this.TrunAngle + dt * this.OffsetAngle;
+                    cc.log("update", dt, this.OffsetAngle, dt * this.OffsetAngle);
+                    this.TrunAngle = this.TrunAngle + dt * this.OffsetAngle * 1000; //每秒转动
                     this.circle.rotation = this.TrunAngle;
                     this.bulletNode.rotation = this.TrunAngle;
                 }

@@ -230,7 +230,7 @@
     "relativePath": "resources"
   },
   "62c8d2d0-a1bd-42a8-a012-dda51a07afa4": {
-    "asset": 1541469831208,
+    "asset": 1541472462569,
     "meta": 1541380798113,
     "relativePath": "scripts"
   },
@@ -660,13 +660,13 @@
     "relativePath": "scripts\\bulletcollision.js"
   },
   "9d4b5b38-86a3-45b6-92cb-6f09dcf65d30": {
-    "asset": 1541505459300,
-    "meta": 1541505489988,
+    "asset": 1541505800912,
+    "meta": 1541506288497,
     "relativePath": "scripts\\CacheObject.js"
   },
   "3998818d-6c7d-46b0-8613-87eccb257795": {
-    "asset": 1541505488359,
-    "meta": 1541505489989,
+    "asset": 1541514133924,
+    "meta": 1541514145016,
     "relativePath": "scripts\\game.js"
   }
 }
