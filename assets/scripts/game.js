@@ -7,7 +7,7 @@
 // Learn life-cycle callbacks:
 //  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
-var CreateHelper = require("CreatorHelper.js");
+var CreatorHelper = require("CreatorHelper.js");
 var CacheObjects = require("CacheObject.js")
 var UintTools = require("UnitTools.js")
 var Game = cc.Class({
@@ -54,7 +54,7 @@ var Game = cc.Class({
         this.IsInit = false;
         this.ChangeUpdateTime = UintTools.random(100,300) //经过多少转向
         this.DirTime = undefined //突然转向
-        this.SpeedTime = undefined  //突然加速
+        this.SpeedTime = undefined  //突然变速时间
         this.UpdateTime = 0;//用于基于突然转向
         if (this.timer) {
             this.unschedule(this.timer)
@@ -125,9 +125,9 @@ var Game = cc.Class({
         if (this.LimitNum)
         {
             var Name = "resources/limit_num/"+num+".png"
-            var RealPath = CreateHelper.getRealPath(Name)
+            var RealPath = CreatorHelper.getRealPath(Name)
             var Sp = this.LimitNum.getComponent(cc.Sprite)
-            CreateHelper.changeSpriteFrameWithServerUrl(Sp, RealPath)
+            CreatorHelper.changeSpriteFrameWithServerUrl(Sp, RealPath)
         }
         if (num >= this.Waitnum){
             this.GameContinue()
@@ -149,6 +149,7 @@ var Game = cc.Class({
         this.CreateBingoBullet()
         this.Bullet = this.CreateBullet()
     },
+    //创建打中的子弹
     CreateBingoBullet() {
         var BingoBullet = cc.instantiate(this.BingoBulletPrefab)
         this.bulletNode.addChild(BingoBullet,1);
@@ -158,6 +159,13 @@ var Game = cc.Class({
         BingoBullet.y = PosY;
         BingoBullet.rotation = 360-this.TrunAngle
     },
+    //上下边栏的图片置换
+    ChangeTopAndBottomAdSpriteFrame(TopUrl,BottomUrl){
+        var TopUrl = "https://pic2.zhimg.com/v2-5ec052fff9d691c6a61654ed16440547_400x224.jpg"
+        var BottomUrl = "https://pic2.zhimg.com/v2-5ec052fff9d691c6a61654ed16440547_400x224.jpg"
+        CreatorHelper.changeSpriteFrameWithServerUrlForWeb(this.TopAd,TopUrl)
+        CreatorHelper.changeSpriteFrameWithServerUrlForWeb(this.BottomAd,BottomUrl)
+    },
     //游戏开始
     GameStart() {
         this.level = 1; //游戏当前关卡
@@ -166,6 +174,10 @@ var Game = cc.Class({
         this.IsCanTap = true;
         this.IsOver = false;
         this.IsInit = false;
+        this.TopAd = cc.find("TopAd",this.node)
+        this.BottomAd = cc.find("BottomAd",this.node)
+        //测试网上下载图片
+        this.ChangeTopAndBottomAdSpriteFrame()
         this.TapHandle()//设置触摸
         this.InitLevelUi(this.level);
     },
@@ -185,7 +197,7 @@ var Game = cc.Class({
         self.node.addChild(self.SuccessAlert);
         self.SuccessAlert.active = true
         self.NextBtn = cc.find("next_btn", self.SuccessAlert)
-        CreateHelper.setNodeClickEvent(self.NextBtn, function () {
+        CreatorHelper.setNodeClickEvent(self.NextBtn, function () {
             self.level += 1;
             self.InitLevelUi(self.level)
           })
@@ -202,7 +214,7 @@ var Game = cc.Class({
         self.node.addChild(self.FailAlert);
         self.FailAlert.active = true
         self.ResetBtn = cc.find("next_btn", self.FailAlert)
-        CreateHelper.setNodeClickEvent(self.ResetBtn, function () {
+        CreatorHelper.setNodeClickEvent(self.ResetBtn, function () {
             self.FailAlert.active = false
             self.InitLevelUi(1)
           })
@@ -210,7 +222,7 @@ var Game = cc.Class({
     TapHandle(){
         var self = this
         if (self.node) {
-            CreateHelper.setNodeClickEvent(self.node, function () {
+            CreatorHelper.setNodeClickEvent(self.node, function () {
                 if (self.IsCanTap) {
                     if (!self.isOver) {
                         if (self.IsInit){
