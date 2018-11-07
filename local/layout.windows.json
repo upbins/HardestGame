@@ -99,7 +99,8 @@
         "assets",
         "scene"
       ]
-    }
+    },
+    "window-1541569520567": {}
   },
   "panels": {
     "sprite-editor": {
@@ -119,6 +120,12 @@
       "y": 246,
       "width": 600,
       "height": 564
+    },
+    "builder": {
+      "x": 525,
+      "y": 248,
+      "width": 516,
+      "height": 738
     }
   }
 }

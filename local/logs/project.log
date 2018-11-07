@@ -1,0 +1,58 @@
+2018-11-06T14:11:09.057Z - normal: Load ~/.CocosCreator/settings.json
+2018-11-06T14:11:09.062Z - normal: checking language setting...
+2018-11-06T14:11:09.062Z - normal: Language: zh
+2018-11-06T14:11:10.937Z - success: protocol editor-framework registered
+2018-11-06T14:11:10.938Z - success: protocol app registered
+2018-11-06T14:11:10.938Z - success: protocol theme registered
+2018-11-06T14:11:10.938Z - success: protocol packages registered
+2018-11-06T14:11:10.938Z - success: protocol unpack registerred
+2018-11-06T14:11:10.938Z - success: protocol disable-commonjs registerred
+2018-11-06T14:11:11.144Z - normal: connected!
+2018-11-06T14:11:11.153Z - normal: Check project D:\CocosCreator\HardestGame
+2018-11-06T14:11:11.155Z - normal: Initializing project D:\CocosCreator\HardestGame
+2018-11-06T14:11:11.157Z - normal: Initializing Cocos2d
+2018-11-06T14:11:12.550Z - normal: Initializing Asset Database
+2018-11-06T14:11:12.602Z - success: protocol uuid registerred
+2018-11-06T14:11:12.602Z - success: protocol db registerred
+2018-11-06T14:11:12.602Z - success: protocol thumbnail registerred
+2018-11-06T14:11:12.602Z - normal: Loading editor/builtin packages
+2018-11-06T14:11:12.827Z - success: assets loaded
+2018-11-06T14:11:12.829Z - success: builder loaded
+2018-11-06T14:11:12.831Z - success: cocos-analytics loaded
+2018-11-06T14:11:12.833Z - success: console loaded
+2018-11-06T14:11:12.873Z - success: fb-instant-games loaded
+2018-11-06T14:11:12.878Z - success: hierarchy loaded
+2018-11-06T14:11:12.881Z - success: inspector loaded
+2018-11-06T14:11:12.883Z - success: keystore loaded
+2018-11-06T14:11:12.887Z - success: node-library loaded
+2018-11-06T14:11:12.889Z - success: package-asset loaded
+2018-11-06T14:11:12.890Z - success: preferences loaded
+2018-11-06T14:11:12.892Z - success: project-exporter loaded
+2018-11-06T14:11:12.908Z - success: project-importer loaded
+2018-11-06T14:11:12.909Z - success: project-settings loaded
+2018-11-06T14:11:12.912Z - success: ui-kit loaded
+2018-11-06T14:11:12.915Z - success: scene loaded
+2018-11-06T14:11:12.916Z - success: sprite-editor loaded
+2018-11-06T14:11:12.919Z - success: store loaded
+2018-11-06T14:11:12.931Z - success: timeline loaded
+2018-11-06T14:11:12.932Z - normal: Loading builtin packages
+2018-11-06T14:11:13.012Z - success: asset-db-debugger loaded
+2018-11-06T14:11:13.021Z - success: code-editor loaded
+2018-11-06T14:11:13.021Z - success: color-picker loaded
+2018-11-06T14:11:13.024Z - success: package-manager loaded
+2018-11-06T14:11:13.024Z - success: qqplay-adapter loaded
+2018-11-06T14:11:13.037Z - success: sdkbox loaded
+2018-11-06T14:11:13.041Z - success: tester loaded
+2018-11-06T14:11:13.044Z - success: ui-grid loaded
+2018-11-06T14:11:13.045Z - success: ui-kit-preview-extra loaded
+2018-11-06T14:11:13.066Z - success: ui-kit-preview loaded
+2018-11-06T14:11:13.068Z - success: ui-tree loaded
+2018-11-06T14:11:13.068Z - success: weapp-adapter loaded
+2018-11-06T14:11:14.545Z - normal: Loading packages
+2018-11-06T14:11:14.550Z - normal: Watching packages
+2018-11-06T14:11:15.014Z - normal: Run Application
+2018-11-06T14:11:16.278Z - success: preview server running at http://localhost:7456
+2018-11-07T02:58:34.240Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:52527
+2018-11-07T02:58:34.242Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:52529
+2018-11-07T02:58:34.243Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:52530
+2018-11-07T02:59:32.442Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:53197

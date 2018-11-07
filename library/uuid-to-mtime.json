@@ -590,13 +590,13 @@
     "relativePath": "resources\\prefab\\leveltips.prefab"
   },
   "1872b5e9-4c0b-4273-b8ed-a7bd7b10d7f7": {
-    "asset": 1541380798101,
-    "meta": 1541380986059,
+    "asset": 1541559559448,
+    "meta": 1541559559453,
     "relativePath": "resources\\prefab\\success_alert.prefab"
   },
   "18eef5d7-bed4-4de5-967d-91b774e53775": {
-    "asset": 1541380798094,
-    "meta": 1541380986044,
+    "asset": 1541559607022,
+    "meta": 1541559607028,
     "relativePath": "resources\\prefab\\fail_alert.prefab"
   },
   "edcee16a-21a1-476d-862e-0a6e6d28d77d": {
@@ -659,14 +659,24 @@
     "meta": 1541505115057,
     "relativePath": "scripts\\bulletcollision.js"
   },
+  "58dc276a-29f4-436b-b7ba-de8402285d1f": {
+    "asset": 1541559552746,
+    "meta": 1541559552764,
+    "relativePath": "resources\\animation\\SuccessAnimation.anim"
+  },
+  "3752a2ca-eb5a-4f61-81b4-601bdf9cf46e": {
+    "asset": 1541559599471,
+    "meta": 1541559599477,
+    "relativePath": "resources\\animation\\FailAnimation.anim"
+  },
   "9d4b5b38-86a3-45b6-92cb-6f09dcf65d30": {
-    "asset": 1541505800912,
-    "meta": 1541506288497,
+    "asset": 1541569420616,
+    "meta": 1541569440802,
     "relativePath": "scripts\\CacheObject.js"
   },
   "3998818d-6c7d-46b0-8613-87eccb257795": {
-    "asset": 1541514133924,
-    "meta": 1541514145016,
+    "asset": 1541569592486,
+    "meta": 1541573205637,
     "relativePath": "scripts\\game.js"
   }
 }

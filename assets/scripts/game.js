@@ -9,6 +9,7 @@
 //  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
 var CreateHelper = require("CreatorHelper.js");
 var CacheObjects = require("CacheObject.js")
+var UintTools = require("UnitTools.js")
 var Game = cc.Class({
     extends: cc.Component,
 
@@ -51,7 +52,8 @@ var Game = cc.Class({
         this.IsSendBullet = false;
         this.IsCanTap = false;
         this.IsInit = false;
-        this.ChangeUpdateTime = Math.random(50,100)
+        this.ChangeUpdateTime = UintTools.random(100,300) //经过多少转向
+        this.DirTime = undefined
         this.UpdateTime = 0;//用于基于突然转向
         if (this.timer) {
             this.unschedule(this.timer)
@@ -75,10 +77,10 @@ var Game = cc.Class({
         }
         LevelUi.addChild(this.TimeLabel)
         LevelUi.addChild(this.LimitNum)
-        // this.circle.zIndex = 2
         this.OffsetAngle = LevelArray.RoteSpeed
         this.LimitTime = LevelArray.Time
-        this.waitnum = LevelArray.TagetNum
+        this.Waitnum = LevelArray.TagetNum
+        this.IsReturn = LevelArray.IsReturn
         this.TrunAngle = 0
         this.CurLimitNum = 0
         this.UpdateLimitNum(0)
@@ -118,16 +120,17 @@ var Game = cc.Class({
     },
     //更新当前插中数字的
     UpdateLimitNum(num){
-        if (num >= this.waitnum){
-            this.GameContinue()
-            return
-        }
+    
         if (this.LimitNum)
         {
             var Name = "resources/limit_num/"+num+".png"
             var RealPath = CreateHelper.getRealPath(Name)
             var Sp = this.LimitNum.getComponent(cc.Sprite)
             CreateHelper.changeSpriteFrameWithServerUrl(Sp, RealPath)
+        }
+        if (num >= this.Waitnum){
+            this.GameContinue()
+            return
         }
     },
     //创建子弹
@@ -140,9 +143,8 @@ var Game = cc.Class({
     CheckCollision(){
         this.Bullet.active = false;
         this.CurLimitNum += 1;
-        this.IsSendBullet = false
+        this.IsCanTap = true;
         this.UpdateLimitNum(this.CurLimitNum)
-        cc.log("CheckoutCollsion",this.Bullet.x,this.Bullet.y,this.TrunAngle,this.CurLimitNum)
         this.CreateBingoBullet()
         this.Bullet = this.CreateBullet()
     },
@@ -170,12 +172,13 @@ var Game = cc.Class({
         this.IsCanTap = false;
         this.IsPause = true;
     },
-    GameContinue(resetLevel) {
+    GameContinue() {
         var self = this;
-        self.IsPause = false;
-        self.IsCanTap = true;
-        if (this.IsOver || resetLevel) {
-            this.IsOver = false;
+        self.IsPause = true;
+        self.IsCanTap = false;
+        self.IsInit = false
+        if (self.SuccessAlert){
+            self.SuccessAlert.removeAllChildren(true);
         }
         self.SuccessAlert = cc.instantiate(self.SuccessAlertPrefab)
         self.node.addChild(self.SuccessAlert);
@@ -183,7 +186,6 @@ var Game = cc.Class({
         self.NextBtn = cc.find("next_btn", self.SuccessAlert)
         CreateHelper.setNodeClickEvent(self.NextBtn, function () {
             self.level += 1;
-            cc.log("开始下一关",self.level)
             self.InitLevelUi(self.level)
           })
 
@@ -192,6 +194,9 @@ var Game = cc.Class({
         var self = this;
         self.isOver = true;
         self.isCanTap = false;
+        if (self.FailAlert){
+            self.FailAlert.removeAllChildren(true);
+        }
         self.FailAlert = cc.instantiate(self.FailAlertPrefab)
         self.node.addChild(self.FailAlert);
         self.FailAlert.active = true
@@ -205,26 +210,42 @@ var Game = cc.Class({
         var self = this
         if (self.node) {
             CreateHelper.setNodeClickEvent(self.node, function () {
-                if (self.IsCanTap && !self.isPause) {
-                    self.IsSendBullet = true
-                    self.isCanTap = false
-                    self.Bullet.active = true
-                    var MoveAction = cc.moveTo(0.5,cc.p(self.bulletNode.x,self.bulletNode.y)).easing(cc.easeSineOut()); 
-                    self.Bullet.runAction(MoveAction)
+                if (self.IsCanTap) {
+                    if (!self.isOver) {
+                        if (self.IsInit){
+                            self.IsCanTap = false
+                            self.Bullet.active = true
+                            var MoveAction = cc.moveTo(0.5,cc.p(self.bulletNode.x,self.bulletNode.y)).easing(cc.easeSineOut()); 
+                            self.Bullet.runAction(MoveAction)
+                        }
+                    }
+                
                 }
             })
         }
     },
     //旋转的过程中的一些特殊操作
     ChangeRandomDir(){
+        //翻转
+        if (this.IsReturn) {
+            if (this.DirTime == undefined){
+                this.DirTime = this.ChangeUpdateTime + UintTools.random(100,300)
+            }
+            this.UpdateTime+=1
+            if (this.UpdateTime >= this.DirTime) {
+                this.DirTime = undefined
+                this.UpdateTime = 0
+                this.OffsetAngle = -this.OffsetAngle
+            }
+        }
     },
     //更新位置
     update(dt) {
         if (!this.isPause) {
             if (!this.isOver){
                 if (this.IsInit){
-                    cc.log("update",dt,this.OffsetAngle,dt*this.OffsetAngle)
-                    this.TrunAngle =  this.TrunAngle  + dt*this.OffsetAngle*1000 //每秒转动
+                    this.ChangeRandomDir()
+                    this.TrunAngle =  this.TrunAngle + this.OffsetAngle //每帧转动
                     this.circle.rotation = this.TrunAngle;
                     this.bulletNode.rotation = this.TrunAngle;
                 }
