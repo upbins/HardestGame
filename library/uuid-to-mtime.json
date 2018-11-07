@@ -350,8 +350,8 @@
     "relativePath": "resources\\limit_num\\14.png"
   },
   "9ecebd2d-32fb-404f-a185-05e22291ad62": {
-    "asset": 1541594469901,
-    "meta": 1541594469910,
+    "asset": 1541597993048,
+    "meta": 1541597993057,
     "relativePath": "resources\\game.fire"
   },
   "6f98dd0b-b442-4973-954f-689a0a3fbde3": {
@@ -624,11 +624,6 @@
     "meta": 1541380798052,
     "relativePath": "resources\\animation"
   },
-  "687093ee-b8a3-4405-85af-81fa2e2e9ee1": {
-    "asset": 1541380798113,
-    "meta": 1541380986741,
-    "relativePath": "scripts\\CreatorHelper.js"
-  },
   "747d0458-0cbf-47fd-bd57-2e808cede970": {
     "asset": 1541380798114,
     "meta": 1541380986779,
@@ -675,8 +670,13 @@
     "relativePath": "scripts\\CacheObject.js"
   },
   "3998818d-6c7d-46b0-8613-87eccb257795": {
-    "asset": 1541595126078,
-    "meta": 1541595152038,
+    "asset": 1541598051128,
+    "meta": 1541598052111,
     "relativePath": "scripts\\game.js"
+  },
+  "687093ee-b8a3-4405-85af-81fa2e2e9ee1": {
+    "asset": 1541598486325,
+    "meta": 1541598512824,
+    "relativePath": "scripts\\CreatorHelper.js"
   }
 }

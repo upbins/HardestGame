@@ -175,8 +175,9 @@ var Game = cc.Class({
     ChangeTopAndBottomAdSpriteFrame: function ChangeTopAndBottomAdSpriteFrame(TopUrl, BottomUrl) {
         var TopUrl = "https://pic2.zhimg.com/v2-5ec052fff9d691c6a61654ed16440547_400x224.jpg";
         var BottomUrl = "https://pic2.zhimg.com/v2-5ec052fff9d691c6a61654ed16440547_400x224.jpg";
+
         CreatorHelper.changeSpriteFrameWithServerUrlForWeb(this.TopAd, TopUrl);
-        CreatorHelper.changeSpriteFrameWithServerUrlForWeb(this.BottomAd, BottomUrl);
+        CreatorHelper.changeSpriteFrameWithServerUrlForWeb(this.AdSprite, BottomUrl);
     },
 
     //游戏开始
@@ -188,7 +189,9 @@ var Game = cc.Class({
         this.IsOver = false;
         this.IsInit = false;
         this.TopAd = cc.find("TopAd", this.node);
+
         this.BottomAd = cc.find("BottomAd", this.node);
+        this.AdSprite = cc.find("AdSprite", this.BottomAd);
         //测试网上下载图片
         this.ChangeTopAndBottomAdSpriteFrame();
         this.TapHandle(); //设置触摸
