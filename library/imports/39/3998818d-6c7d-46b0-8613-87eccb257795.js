@@ -60,7 +60,8 @@ var Game = cc.Class({
         this.IsCanTap = false;
         this.IsInit = false;
         this.ChangeUpdateTime = UintTools.random(100, 300); //经过多少转向
-        this.DirTime = undefined;
+        this.DirTime = undefined; //突然转向
+        this.SpeedTime = undefined; //突然加速
         this.UpdateTime = 0; //用于基于突然转向
         if (this.timer) {
             this.unschedule(this.timer);
@@ -248,6 +249,7 @@ var Game = cc.Class({
                 this.OffsetAngle = -this.OffsetAngle;
             }
         }
+        //突然加速
     },
 
     //更新位置
