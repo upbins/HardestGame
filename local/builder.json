@@ -5,7 +5,7 @@
     "armeabi-v7a",
     "armeabi"
   ],
-  "buildPath": "./build",
+  "buildPath": "D:\\CocosCreator\\HardestGameBuild",
   "debug": true,
   "embedWebDebugger": false,
   "keystoreAlias": "",

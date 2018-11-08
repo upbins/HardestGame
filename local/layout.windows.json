@@ -99,8 +99,7 @@
         "assets",
         "scene"
       ]
-    },
-    "window-1541659558375": {}
+    }
   },
   "panels": {
     "sprite-editor": {
@@ -128,7 +127,7 @@
       "height": 738
     },
     "project-settings": {
-      "x": 662,
+      "x": 612,
       "y": 246,
       "width": 600,
       "height": 564

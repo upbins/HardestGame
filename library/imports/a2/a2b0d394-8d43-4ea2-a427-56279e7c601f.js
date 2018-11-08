@@ -14,13 +14,12 @@ cc.Class({
         this.GameObject = CacheObjects.Game;
         this.isshow = false;
         cc.director.getCollisionManager().enabled = true;
-        cc.director.getCollisionManager().enabledDebugDraw = true;
-        cc.director.getCollisionManager().enabledDrawBoundingBox = true;
+        // cc.director.getCollisionManager().enabledDebugDraw = true;
+        // cc.director.getCollisionManager().enabledDrawBoundingBox = true;
     },
 
     onCollisionEnter: function onCollisionEnter(other) {
         if (other.tag == CacheObjects.CollsionTypeOne) {
-            cc.log("BulletCollsion");
             this.GameObject.GameOver();
         }
     },

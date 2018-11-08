@@ -225,22 +225,22 @@
     "relativePath": "prefab\\webview.prefab"
   },
   "6604b33a-2709-4757-a3b8-9691bff13ecf": {
-    "asset": 1541380798105,
+    "asset": 1541648602107,
     "meta": 1541380798045,
     "relativePath": "resources"
   },
   "62c8d2d0-a1bd-42a8-a012-dda51a07afa4": {
-    "asset": 1541472462569,
+    "asset": 1541639854522,
     "meta": 1541380798113,
     "relativePath": "scripts"
   },
   "2b61ff89-5f3e-458d-a71d-70cdde785cf5": {
-    "asset": 1541380798052,
+    "asset": 1541639854468,
     "meta": 1541380798046,
     "relativePath": "resources\\alert"
   },
   "7d11312b-0493-48ef-ba22-b3e663769592": {
-    "asset": 1541380798105,
+    "asset": 1541639854512,
     "meta": 1541380798102,
     "relativePath": "resources\\time_num"
   },
@@ -250,12 +250,12 @@
     "relativePath": "resources\\level"
   },
   "676dbe30-bd27-420b-9f38-51cf34c671f6": {
-    "asset": 1541380798092,
+    "asset": 1541639854504,
     "meta": 1541380798082,
     "relativePath": "resources\\limit_num"
   },
   "6f98dd0b-b442-4973-954f-689a0a3fbde3": {
-    "asset": 1541380798065,
+    "asset": 1541639854479,
     "meta": 1541380798055,
     "relativePath": "resources\\level\\1"
   },
@@ -270,22 +270,22 @@
     "relativePath": "resources\\prefab\\level1.prefab"
   },
   "95f4e60b-0f22-4934-a948-be5511a63b5a": {
-    "asset": 1541380798070,
+    "asset": 1541639854482,
     "meta": 1541380798066,
     "relativePath": "resources\\level\\2"
   },
   "de312c14-3075-4d74-b03a-0e8b89fe0e35": {
-    "asset": 1541380798074,
+    "asset": 1541639854485,
     "meta": 1541380798071,
     "relativePath": "resources\\level\\3"
   },
   "4b3ea24a-23a5-47cb-bc2c-080a64f783ac": {
-    "asset": 1541380798078,
+    "asset": 1541639854488,
     "meta": 1541380798075,
     "relativePath": "resources\\level\\4"
   },
   "63efc088-3af8-4c6b-8431-11968e279d51": {
-    "asset": 1541380798082,
+    "asset": 1541639854490,
     "meta": 1541380798078,
     "relativePath": "resources\\level\\5"
   },
@@ -310,7 +310,7 @@
     "relativePath": "resources\\prefab\\level5.prefab"
   },
   "df3f0c93-32f1-40d0-936b-9e4cba0973de": {
-    "asset": 1541380798112,
+    "asset": 1541639854521,
     "meta": 1541380798105,
     "relativePath": "resources\\tips"
   },
@@ -345,8 +345,8 @@
     "relativePath": "resources\\prefab\\limit_num.prefab"
   },
   "4d263c8f-20ea-4aee-b596-ec30ffc9d696": {
-    "asset": 1541505082225,
-    "meta": 1541505082233,
+    "asset": 1541661840921,
+    "meta": 1541661840928,
     "relativePath": "resources\\prefab\\bingo_bullet.prefab"
   },
   "bc811610-de05-4307-94fc-a4b1b43fb12e": {
@@ -355,7 +355,7 @@
     "relativePath": "resources\\prefab\\bullet.prefab"
   },
   "3478699e-30bb-45ec-8e04-9284cf581c50": {
-    "asset": 1541380798053,
+    "asset": 1541559572469,
     "meta": 1541380798052,
     "relativePath": "resources\\animation"
   },
@@ -368,16 +368,6 @@
     "asset": 1541417275102,
     "meta": 1541417275107,
     "relativePath": "resources\\prefab\\time_label.prefab"
-  },
-  "383ac0c3-04e8-477e-b033-365b4f0fb1d8": {
-    "asset": 1541495112917,
-    "meta": 1541495299935,
-    "relativePath": "scripts\\collision.js"
-  },
-  "a2b0d394-8d43-4ea2-a427-56279e7c601f": {
-    "asset": 1541505092284,
-    "meta": 1541505115057,
-    "relativePath": "scripts\\bulletcollision.js"
   },
   "58dc276a-29f4-436b-b7ba-de8402285d1f": {
     "asset": 1541559552746,
@@ -655,7 +645,7 @@
     "relativePath": "resources\\tips\\level5.png"
   },
   "f2248add-8c07-42e9-8829-a14b82244c41": {
-    "asset": 1541639854511,
+    "asset": 1541646404819,
     "meta": 1541639854504,
     "relativePath": "resources\\sounds"
   },
@@ -714,14 +704,24 @@
     "meta": 1541649785048,
     "relativePath": "scripts\\UnitTools.js"
   },
-  "9d4b5b38-86a3-45b6-92cb-6f09dcf65d30": {
-    "asset": 1541657548353,
-    "meta": 1541657724855,
-    "relativePath": "scripts\\CacheObject.js"
-  },
   "3998818d-6c7d-46b0-8613-87eccb257795": {
     "asset": 1541657063319,
     "meta": 1541657724856,
     "relativePath": "scripts\\game.js"
+  },
+  "9d4b5b38-86a3-45b6-92cb-6f09dcf65d30": {
+    "asset": 1541661428885,
+    "meta": 1541661463370,
+    "relativePath": "scripts\\CacheObject.js"
+  },
+  "a2b0d394-8d43-4ea2-a427-56279e7c601f": {
+    "asset": 1541669803312,
+    "meta": 1541669928176,
+    "relativePath": "scripts\\bulletcollision.js"
+  },
+  "383ac0c3-04e8-477e-b033-365b4f0fb1d8": {
+    "asset": 1541661789187,
+    "meta": 1541661805798,
+    "relativePath": "scripts\\collision.js"
   }
 }

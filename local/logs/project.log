@@ -1,59 +1,67 @@
-2018-11-06T14:11:09.057Z - normal: Load ~/.CocosCreator/settings.json
-2018-11-06T14:11:09.062Z - normal: checking language setting...
-2018-11-06T14:11:09.062Z - normal: Language: zh
-2018-11-06T14:11:10.937Z - success: protocol editor-framework registered
-2018-11-06T14:11:10.938Z - success: protocol app registered
-2018-11-06T14:11:10.938Z - success: protocol theme registered
-2018-11-06T14:11:10.938Z - success: protocol packages registered
-2018-11-06T14:11:10.938Z - success: protocol unpack registerred
-2018-11-06T14:11:10.938Z - success: protocol disable-commonjs registerred
-2018-11-06T14:11:11.144Z - normal: connected!
-2018-11-06T14:11:11.153Z - normal: Check project D:\CocosCreator\HardestGame
-2018-11-06T14:11:11.155Z - normal: Initializing project D:\CocosCreator\HardestGame
-2018-11-06T14:11:11.157Z - normal: Initializing Cocos2d
-2018-11-06T14:11:12.550Z - normal: Initializing Asset Database
-2018-11-06T14:11:12.602Z - success: protocol uuid registerred
-2018-11-06T14:11:12.602Z - success: protocol db registerred
-2018-11-06T14:11:12.602Z - success: protocol thumbnail registerred
-2018-11-06T14:11:12.602Z - normal: Loading editor/builtin packages
-2018-11-06T14:11:12.827Z - success: assets loaded
-2018-11-06T14:11:12.829Z - success: builder loaded
-2018-11-06T14:11:12.831Z - success: cocos-analytics loaded
-2018-11-06T14:11:12.833Z - success: console loaded
-2018-11-06T14:11:12.873Z - success: fb-instant-games loaded
-2018-11-06T14:11:12.878Z - success: hierarchy loaded
-2018-11-06T14:11:12.881Z - success: inspector loaded
-2018-11-06T14:11:12.883Z - success: keystore loaded
-2018-11-06T14:11:12.887Z - success: node-library loaded
-2018-11-06T14:11:12.889Z - success: package-asset loaded
-2018-11-06T14:11:12.890Z - success: preferences loaded
-2018-11-06T14:11:12.892Z - success: project-exporter loaded
-2018-11-06T14:11:12.908Z - success: project-importer loaded
-2018-11-06T14:11:12.909Z - success: project-settings loaded
-2018-11-06T14:11:12.912Z - success: ui-kit loaded
-2018-11-06T14:11:12.915Z - success: scene loaded
-2018-11-06T14:11:12.916Z - success: sprite-editor loaded
-2018-11-06T14:11:12.919Z - success: store loaded
-2018-11-06T14:11:12.931Z - success: timeline loaded
-2018-11-06T14:11:12.932Z - normal: Loading builtin packages
-2018-11-06T14:11:13.012Z - success: asset-db-debugger loaded
-2018-11-06T14:11:13.021Z - success: code-editor loaded
-2018-11-06T14:11:13.021Z - success: color-picker loaded
-2018-11-06T14:11:13.024Z - success: package-manager loaded
-2018-11-06T14:11:13.024Z - success: qqplay-adapter loaded
-2018-11-06T14:11:13.037Z - success: sdkbox loaded
-2018-11-06T14:11:13.041Z - success: tester loaded
-2018-11-06T14:11:13.044Z - success: ui-grid loaded
-2018-11-06T14:11:13.045Z - success: ui-kit-preview-extra loaded
-2018-11-06T14:11:13.066Z - success: ui-kit-preview loaded
-2018-11-06T14:11:13.068Z - success: ui-tree loaded
-2018-11-06T14:11:13.068Z - success: weapp-adapter loaded
-2018-11-06T14:11:14.545Z - normal: Loading packages
-2018-11-06T14:11:14.550Z - normal: Watching packages
-2018-11-06T14:11:15.014Z - normal: Run Application
-2018-11-06T14:11:16.278Z - success: preview server running at http://localhost:7456
-2018-11-07T02:58:34.240Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:52527
-2018-11-07T02:58:34.242Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:52529
-2018-11-07T02:58:34.243Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:52530
-2018-11-07T02:59:32.442Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:53197
-2018-11-07T12:16:05.130Z - success: VS Code extension installed to C:\Users\Administrator.SKY-20180829QBE\.vscode\extensions
+2018-11-08T09:38:41.010Z - normal: Load ~/.CocosCreator/settings.json
+2018-11-08T09:38:41.014Z - normal: checking language setting...
+2018-11-08T09:38:41.014Z - normal: Language: zh
+2018-11-08T09:38:43.492Z - success: protocol editor-framework registered
+2018-11-08T09:38:43.492Z - success: protocol app registered
+2018-11-08T09:38:43.492Z - success: protocol theme registered
+2018-11-08T09:38:43.492Z - success: protocol packages registered
+2018-11-08T09:38:43.492Z - success: protocol unpack registerred
+2018-11-08T09:38:43.492Z - success: protocol disable-commonjs registerred
+2018-11-08T09:38:43.710Z - normal: connected!
+2018-11-08T09:38:43.713Z - normal: Check project D:\CocosCreator\HardestGame
+2018-11-08T09:38:43.716Z - normal: Initializing project D:\CocosCreator\HardestGame
+2018-11-08T09:38:43.718Z - normal: Initializing Cocos2d
+2018-11-08T09:38:44.042Z - normal: Initializing Asset Database
+2018-11-08T09:38:44.112Z - success: protocol uuid registerred
+2018-11-08T09:38:44.113Z - success: protocol db registerred
+2018-11-08T09:38:44.113Z - success: protocol thumbnail registerred
+2018-11-08T09:38:44.113Z - normal: Loading editor/builtin packages
+2018-11-08T09:38:44.538Z - success: assets loaded
+2018-11-08T09:38:44.542Z - success: builder loaded
+2018-11-08T09:38:44.546Z - success: cocos-analytics loaded
+2018-11-08T09:38:44.549Z - success: console loaded
+2018-11-08T09:38:44.598Z - success: fb-instant-games loaded
+2018-11-08T09:38:44.605Z - success: hierarchy loaded
+2018-11-08T09:38:44.609Z - success: inspector loaded
+2018-11-08T09:38:44.610Z - success: keystore loaded
+2018-11-08T09:38:44.614Z - success: node-library loaded
+2018-11-08T09:38:44.616Z - success: package-asset loaded
+2018-11-08T09:38:44.618Z - success: preferences loaded
+2018-11-08T09:38:44.621Z - success: project-exporter loaded
+2018-11-08T09:38:44.641Z - success: project-importer loaded
+2018-11-08T09:38:44.643Z - success: project-settings loaded
+2018-11-08T09:38:44.645Z - success: ui-kit loaded
+2018-11-08T09:38:44.649Z - success: scene loaded
+2018-11-08T09:38:44.652Z - success: sprite-editor loaded
+2018-11-08T09:38:44.657Z - success: store loaded
+2018-11-08T09:38:44.663Z - success: timeline loaded
+2018-11-08T09:38:44.663Z - normal: Loading builtin packages
+2018-11-08T09:38:44.742Z - success: asset-db-debugger loaded
+2018-11-08T09:38:44.752Z - success: code-editor loaded
+2018-11-08T09:38:44.753Z - success: color-picker loaded
+2018-11-08T09:38:44.756Z - success: package-manager loaded
+2018-11-08T09:38:44.757Z - success: qqplay-adapter loaded
+2018-11-08T09:38:44.770Z - success: sdkbox loaded
+2018-11-08T09:38:44.775Z - success: tester loaded
+2018-11-08T09:38:44.779Z - success: ui-grid loaded
+2018-11-08T09:38:44.783Z - success: ui-kit-preview-extra loaded
+2018-11-08T09:38:44.814Z - success: ui-kit-preview loaded
+2018-11-08T09:38:44.816Z - success: ui-tree loaded
+2018-11-08T09:38:44.817Z - success: weapp-adapter loaded
+2018-11-08T09:38:46.404Z - normal: Loading packages
+2018-11-08T09:38:46.410Z - normal: Watching packages
+2018-11-08T09:38:47.093Z - normal: Run Application
+2018-11-08T09:38:49.750Z - success: preview server running at http://localhost:7456
+2018-11-08T09:40:17.652Z - normal: Start to compile native project. Please wait...
+2018-11-08T09:40:17.656Z - normal: The log file path [ C:\Users\Administrator.SKY-20180829QBE\.CocosCreator\logs\native.log ]
+2018-11-08T09:40:22.156Z - failed: Error: Compile failed. The log file path [ C:\Users\Administrator.SKY-20180829QBE\.CocosCreator\logs\native.log ]
+    at ChildProcess.handleChildProcess (C:\CocosCreator\resources\app.asar\editor\core\native-utils.js:1:20890)
+    at ChildProcess.e.on (C:\CocosCreator\resources\app.asar\editor\core\native-utils.js:1:8846)
+    at emitTwo (events.js:106:13)
+    at ChildProcess.emit (events.js:194:7)
+    at maybeClose (internal/child_process.js:899:16)
+    at Socket.<anonymous> (internal/child_process.js:342:11)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:191:7)
+    at Pipe._handle.close [as _onclose] (net.js:510:12)
+2018-11-08T09:41:34.784Z - info: shutdown preview server
