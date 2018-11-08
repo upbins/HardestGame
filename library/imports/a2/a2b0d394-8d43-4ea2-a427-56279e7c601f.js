@@ -1,17 +1,17 @@
 "use strict";
 cc._RF.push(module, 'a2b0dOUjUNOoqQnVieefGAf', 'bulletcollision');
-// scripts/bulletcollision.js
+// resources/scripts/bulletcollision.js
 
 "use strict";
 
-var CacheObjects = require("CacheObject.js");
+var CacheObjects = require("global");
 cc.Class({
     extends: cc.Component,
 
     properties: {},
     // use this for initialization
     onLoad: function onLoad() {
-        this.GameObject = CacheObjects.Game;
+        this.GameObject = CacheObjects.GameObject;
         this.isshow = false;
         cc.director.getCollisionManager().enabled = true;
         // cc.director.getCollisionManager().enabledDebugDraw = true;

@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, '39988GNbH1GsIYTh+zLJXeV', 'game');
-// scripts/game.js
+// resources/scripts/game.js
 
 "use strict";
 
@@ -13,10 +13,10 @@ cc._RF.push(module, '39988GNbH1GsIYTh+zLJXeV', 'game');
 // Learn life-cycle callbacks:
 //  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
-var CreatorHelper = require("CreatorHelper.js");
-var CacheObjects = require("CacheObject.js");
-var UnitTools = require("UnitTools.js");
-var Game = cc.Class({
+var CacheObjects = require('global');
+var CreatorHelper = require("CreatorHelper");
+var UnitTools = require("UnitTools");
+cc.Class({
     extends: cc.Component,
 
     properties: {
@@ -70,10 +70,11 @@ var Game = cc.Class({
         this.InitConfig();
     },
 
-    //初始化相关关卡数据
+    // //初始化相关关卡数据
     InitConfig: function InitConfig() {
-        this.LevelArray = CacheObjects.LevelInfo;
-        CacheObjects.Game = this;
+        this.LevelArray = [{ "TagetNum": 10, "Time": 60, "RoteSpeed": 2.22, "IsReturn": false, "ChangeTime": 20 }, //通关限定数目,通关限定时间,转速,是否可翻转
+        { "TagetNum": 12, "Time": 45, "RoteSpeed": 3.33, "IsReturn": true, "ChangeTime": 30 }, { "TagetNum": 14, "Time": 30, "RoteSpeed": 4.44, "IsReturn": true, "ChangeTime": 40 }, { "TagetNum": 14, "Time": 30, "RoteSpeed": 5.55, "IsReturn": true, "ChangeTime": 50 }, { "TagetNum": 14, "Time": 30, "RoteSpeed": 6.66, "IsReturn": true, "ChangeTime": 60 }];
+        CacheObjects.GameObject = this;
         this.UnitTools = new UnitTools();
         this.GameStart();
     },
@@ -197,8 +198,10 @@ var Game = cc.Class({
         this.BingoCurrentAudio = cc.audioEngine.play(this.BingoAudio, false, 1);
         var BingoBullet = cc.instantiate(this.BingoBulletPrefab);
         this.bulletNode.addChild(BingoBullet, 1);
-        var PosX = Math.sin(cc.degreesToRadians(180 - this.TrunAngle)) * 135;
-        var PosY = Math.cos(cc.degreesToRadians(180 - this.TrunAngle)) * 135;
+        var a = (180 - this.TrunAngle) * Math.PI / 180; //cc.degreesToRadians(180-this.TrunAngle)
+        var b = (180 - this.TrunAngle) * Math.PI / 180;
+        var PosX = Math.sin(a) * 135;
+        var PosY = Math.cos(b) * 135;
         BingoBullet.x = PosX;
         BingoBullet.y = PosY;
         BingoBullet.rotation = 360 - this.TrunAngle;
@@ -324,6 +327,5 @@ var Game = cc.Class({
         }
     }
 });
-module.exports = Game;
 
 cc._RF.pop();

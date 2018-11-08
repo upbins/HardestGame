@@ -1,0 +1,21 @@
+Executable : /Users/upbins/tools/android-ndk-r10e/ndk-build
+arguments : 
+NDK_PROJECT_PATH=null
+APP_BUILD_SCRIPT=/Users/upbins/CodeProject/CreatorProject/HardestGame/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/jni/Android.mk
+NDK_APPLICATION_MK=/Users/upbins/CodeProject/CreatorProject/HardestGame/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/jni/Application.mk
+APP_ABI=armeabi
+NDK_ALL_ABIS=armeabi
+NDK_DEBUG=0
+APP_PLATFORM=android-16
+NDK_OUT=/Users/upbins/CodeProject/CreatorProject/HardestGame/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/release/obj
+NDK_LIBS_OUT=/Users/upbins/CodeProject/CreatorProject/HardestGame/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/release/lib
+NDK_TOOLCHAIN_VERSION=4.9
+NDK_MODULE_PATH=/Users/upbins/CodeProject/CreatorProject/HardestGame/build/jsb-default/frameworks/cocos2d-x:/Users/upbins/CodeProject/CreatorProject/HardestGame/build/jsb-default/frameworks/cocos2d-x/cocos:/Users/upbins/CodeProject/CreatorProject/HardestGame/build/jsb-default/frameworks/cocos2d-x/external
+-j8
+NDK_DEBUG=0
+APP_SHORT_COMMANDS=false
+LOCAL_SHORT_COMMANDS=false
+-B
+-n
+jvmArgs : 
+
