@@ -2,7 +2,7 @@
 cc._RF.push(module, '68709PuuKNEBYWvgfouLp7h', 'CreatorHelper');
 // scripts/CreatorHelper.js
 
-"use strict";
+'use strict';
 
 function CreatorHelper() {}
 
@@ -105,7 +105,6 @@ CreatorHelper.changeSpriteFrameWithServerUrl = function (sprite, url) {
 //web模式下从远程下载并更换图片
 CreatorHelper.changeSpriteFrameWithServerUrlForWeb = function (sprite, url) {
     if (!sprite) return;
-    console.log("changeSpriteFrameWithServerUrlForWeb=-====>", sprite, url);
     cc.loader.load(url, function (err, tex2d) {
         if (err) {
             setTimeout(function () {
@@ -115,7 +114,6 @@ CreatorHelper.changeSpriteFrameWithServerUrlForWeb = function (sprite, url) {
             var frame = new cc.SpriteFrame();
             frame.setTexture(tex2d);
             sprite.spriteFrame = frame;
-            console.log("changeSpriteFrameWithServerUrlForWeb=-====>2", sprite, tex2d);
             //cc.textureCache.addImage(url);
         }
     });

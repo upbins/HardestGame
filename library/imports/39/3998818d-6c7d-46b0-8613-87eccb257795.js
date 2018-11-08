@@ -15,7 +15,7 @@ cc._RF.push(module, '39988GNbH1GsIYTh+zLJXeV', 'game');
 //  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
 var CreatorHelper = require("CreatorHelper.js");
 var CacheObjects = require("CacheObject.js");
-var UintTools = require("UnitTools.js");
+var UnitTools = require("UnitTools.js");
 var Game = cc.Class({
     extends: cc.Component,
 
@@ -32,7 +32,33 @@ var Game = cc.Class({
         SuccessAlertPrefab: cc.Prefab,
         TimeLablePrefab: cc.Prefab,
         TopAd: cc.Node,
-        BottomAd: cc.Node
+        BottomAd: cc.Node,
+        BulletAudio: {
+            default: null,
+            type: cc.AudioClip
+        },
+
+        TimeAudio: {
+            default: null,
+            type: cc.AudioClip
+        },
+        BingoAudio: {
+            default: null,
+            type: cc.AudioClip
+        },
+        BgAudio: {
+            default: null,
+            type: cc.AudioClip
+        },
+        SuccessAudio: {
+            default: null,
+            type: cc.AudioClip
+        },
+        FailAudio: {
+            default: null,
+            type: cc.AudioClip
+        }
+
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -48,6 +74,7 @@ var Game = cc.Class({
     InitConfig: function InitConfig() {
         this.LevelArray = CacheObjects.LevelInfo;
         CacheObjects.Game = this;
+        this.UnitTools = new UnitTools();
         this.GameStart();
     },
     InitLevelUi: function InitLevelUi(level) {
@@ -58,13 +85,11 @@ var Game = cc.Class({
         if (this.node) {
             this.node.removeAllChildren(true);
         }
+        this.BgCurrentAudio = cc.audioEngine.play(this.BgAudio, true, 0.2);
         this.IsSendBullet = false;
         this.IsCanTap = false;
         this.IsInit = false;
-        this.ChangeUpdateTime = UintTools.random(100, 300); //经过多少转向
-        this.DirTime = undefined; //突然转向
-        this.SpeedTime = undefined; //突然变速时间
-        this.UpdateTime = 0; //用于基于突然转向
+
         if (this.timer) {
             this.unschedule(this.timer);
         }
@@ -73,6 +98,10 @@ var Game = cc.Class({
         var LevelArray = this.LevelArray[level];
         var LevelPrefab = this.LevelsPrefab[level];
         var LevelUi = cc.instantiate(LevelPrefab);
+        this.ChangeUpdateTime = LevelArray.ChangeTime; //UnitTools.random(100,300) //经过多少转向
+        this.DirTime = undefined; //突然转向
+        this.SpeedTime = undefined; //突然变速时间
+        this.UpdateTime = 0; //用于基于突然转向
         this.circle = cc.find("circle", LevelUi);
         this.time_bg = cc.find("time_bg", LevelUi);
         this.limit_bg = cc.find("limit_bg", LevelUi);
@@ -123,7 +152,7 @@ var Game = cc.Class({
                 if (this.timer) {
                     this.unschedule(this.timer);
                 }
-                cc.log("时间到了");
+                this.TimeCurrentAudio = cc.audioEngine.play(this.TimeAudio, false, 1);
                 this.GameOver();
             }
         }.bind(this);
@@ -154,6 +183,7 @@ var Game = cc.Class({
 
     //检测碰撞跟随转
     CheckCollision: function CheckCollision() {
+        cc.audioEngine.stop(this.BulletCurrentAudio);
         this.Bullet.active = false;
         this.CurLimitNum += 1;
         this.IsCanTap = true;
@@ -164,6 +194,7 @@ var Game = cc.Class({
 
     //创建打中的子弹
     CreateBingoBullet: function CreateBingoBullet() {
+        this.BingoCurrentAudio = cc.audioEngine.play(this.BingoAudio, false, 1);
         var BingoBullet = cc.instantiate(this.BingoBulletPrefab);
         this.bulletNode.addChild(BingoBullet, 1);
         var PosX = Math.sin(cc.degreesToRadians(180 - this.TrunAngle)) * 135;
@@ -193,8 +224,9 @@ var Game = cc.Class({
         this.IsCanTap = true;
         this.IsOver = false;
         this.IsInit = false;
-        //测试网上下载图片
-        this.ChangeTopAndBottomAdSpriteFrame();
+        this.IsTryGame = false; //是否试玩
+        // //测试网上下载图片
+        // this.ChangeTopAndBottomAdSpriteFrame()
         this.TapHandle(); //设置触摸
         this.InitLevelUi(this.level);
     },
@@ -207,6 +239,8 @@ var Game = cc.Class({
         self.IsPause = true;
         self.IsCanTap = false;
         self.IsInit = false;
+        cc.audioEngine.stop(self.BgCurrentAudio);
+        self.SuccessCurrentAudio = cc.audioEngine.play(self.SuccessAudio, false, 1);
         if (self.SuccessAlert) {
             self.SuccessAlert.removeAllChildren(true);
         }
@@ -215,6 +249,7 @@ var Game = cc.Class({
         self.SuccessAlert.active = true;
         self.NextBtn = cc.find("next_btn", self.SuccessAlert);
         CreatorHelper.setNodeClickEvent(self.NextBtn, function () {
+            cc.audioEngine.stop(self.SuccessCurrentAudio);
             self.level += 1;
             self.InitLevelUi(self.level);
         });
@@ -226,12 +261,15 @@ var Game = cc.Class({
         if (self.FailAlert) {
             self.FailAlert.removeAllChildren(true);
         }
+        cc.audioEngine.stop(self.BgCurrentAudio);
+        self.FailAudioCurrentAudio = cc.audioEngine.play(self.FailAudio, false, 1);
         self.FailAlert = cc.instantiate(self.FailAlertPrefab);
         self.node.addChild(self.FailAlert);
         self.FailAlert.active = true;
         self.ResetBtn = cc.find("next_btn", self.FailAlert);
         CreatorHelper.setNodeClickEvent(self.ResetBtn, function () {
             self.FailAlert.active = false;
+            cc.audioEngine.stop(self.FailAudioCurrentAudio);
             self.InitLevelUi(1);
         });
     },
@@ -246,6 +284,8 @@ var Game = cc.Class({
                             self.Bullet.active = true;
                             var MoveAction = cc.moveTo(0.5, cc.p(self.bulletNode.x, self.bulletNode.y)).easing(cc.easeSineOut());
                             self.Bullet.runAction(MoveAction);
+                            cc.audioEngine.stop(self.BingoCurrentAudio);
+                            self.BulletCurrentAudio = cc.audioEngine.play(self.BulletAudio, false, 1);
                         }
                     }
                 }
@@ -258,7 +298,7 @@ var Game = cc.Class({
         //翻转
         if (this.IsReturn) {
             if (this.DirTime == undefined) {
-                this.DirTime = this.ChangeUpdateTime + UintTools.random(100, 300);
+                this.DirTime = this.ChangeUpdateTime + this.UnitTools.random(100, 300);
             }
             this.UpdateTime += 1;
             if (this.UpdateTime >= this.DirTime) {

@@ -1,12 +1,12 @@
 {
   "actualPlatform": "Android",
-  "apiLevel": "",
+  "apiLevel": "android-16",
   "appABIs": [
     "armeabi-v7a",
     "armeabi"
   ],
   "buildPath": "./build",
-  "debug": false,
+  "debug": true,
   "embedWebDebugger": false,
   "keystoreAlias": "",
   "keystoreAliasPassword": "",
@@ -16,7 +16,7 @@
   "previewHeight": "720",
   "previewWidth": "1280",
   "sourceMaps": false,
-  "template": "link",
+  "template": "default",
   "useDebugKeystore": true,
   "vsVersion": "auto"
 }
