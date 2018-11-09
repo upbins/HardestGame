@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, '383acDDBOhHfrAzNltPD7HY', 'collision');
-// scripts/collision.js
+// resources/scripts/collision.js
 
 'use strict';
 

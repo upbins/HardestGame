@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, '68709PuuKNEBYWvgfouLp7h', 'CreatorHelper');
-// scripts/CreatorHelper.js
+// resources/scripts/CreatorHelper.js
 
 'use strict';
 

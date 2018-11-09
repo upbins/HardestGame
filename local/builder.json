@@ -1,18 +1,18 @@
 {
-  "actualPlatform": "android",
+  "actualPlatform": "Web Mobile",
   "apiLevel": "android-22",
   "appABIs": [
     "armeabi-v7a",
     "armeabi"
   ],
-  "buildPath": "build",
-  "debug": false,
+  "buildPath": "D:\\CocosCreator\\HardestGameBuild",
+  "debug": true,
   "embedWebDebugger": true,
   "keystoreAlias": "",
   "keystoreAliasPassword": "",
   "keystorePassword": "",
   "keystorePath": "",
-  "platform": "android",
+  "platform": "web-mobile",
   "previewHeight": "720",
   "previewWidth": "1280",
   "sourceMaps": false,

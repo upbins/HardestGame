@@ -65,13 +65,7 @@ cc.Class({
     },
     // //初始化相关关卡数据
     InitConfig() {
-        this.LevelArray =  [
-            {"TagetNum":10,"Time":60,"RoteSpeed":2.22,"IsReturn":false,"ChangeTime":20},//通关限定数目,通关限定时间,转速,是否可翻转
-            {"TagetNum":12,"Time":45,"RoteSpeed":3.33,"IsReturn":true,"ChangeTime":30},
-            {"TagetNum":14,"Time":30,"RoteSpeed":4.44,"IsReturn":true,"ChangeTime":40},
-            {"TagetNum":14,"Time":30,"RoteSpeed":5.55,"IsReturn":true,"ChangeTime":50},
-            {"TagetNum":14,"Time":30,"RoteSpeed":6.66,"IsReturn":true,"ChangeTime":60}
-        ];
+        this.LevelArray = CacheObjects.LevelInfo
         CacheObjects.GameObject = this;
         this.UnitTools = new UnitTools()
         this.GameStart()
@@ -243,6 +237,9 @@ cc.Class({
         self.node.addChild(self.SuccessAlert);
         self.SuccessAlert.active = true
         self.NextBtn = cc.find("next_btn", self.SuccessAlert)
+        if (this.timer) {
+            this.unschedule(this.timer)
+        }
         CreatorHelper.setNodeClickEvent(self.NextBtn, function () {
             cc.audioEngine.stop(self.SuccessCurrentAudio)
             self.level += 1;
@@ -256,6 +253,9 @@ cc.Class({
         self.isCanTap = false;
         if (self.FailAlert){
             self.FailAlert.removeAllChildren(true);
+        }
+        if (this.timer) {
+            this.unschedule(this.timer)
         }
         cc.audioEngine.stop(self.BgCurrentAudio)
         self.FailAudioCurrentAudio = cc.audioEngine.play(self.FailAudio, false, 1);

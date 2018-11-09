@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, '747d0RYDL9H/b1XLoCM7elw', 'UnitTools');
-// scripts/UnitTools.js
+// resources/scripts/UnitTools.js
 
 'use strict';
 
