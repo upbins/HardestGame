@@ -26,6 +26,7 @@ cc.Class({
         }, //关卡表现Prefab
         BulletPrefab: cc.Prefab,
         BingoBulletPrefab: cc.Prefab,
+        FinalBulletPrefab: cc.Prefab,
         FailAlertPrefab: cc.Prefab,
         LimitNumPrefab: cc.Prefab,
         StartTipsPrefab: cc.Prefab,
@@ -102,7 +103,12 @@ cc.Class({
         this.DirTime = undefined; //突然转向
         this.SpeedTime = undefined; //突然变速时间
         this.UpdateTime = 0; //用于基于突然转向
+        this.QuickTime = 0; //减速之后多久变灰正常
+        this.QuickStandTime = undefined;
         this.circle = cc.find("circle", LevelUi);
+        this.WaterNode = cc.find("WaterNode", LevelUi);
+        this.WaterNode.Opacity = 0;
+        this.WaterNode.active = false;
         this.time_bg = cc.find("time_bg", LevelUi);
         this.limit_bg = cc.find("limit_bg", LevelUi);
         this.LimitNum = cc.instantiate(this.LimitNumPrefab);
@@ -117,6 +123,7 @@ cc.Class({
         LevelUi.addChild(this.TimeLabel);
         LevelUi.addChild(this.LimitNum);
         this.OffsetAngle = LevelArray.RoteSpeed;
+        this.TempOffsetAngle = LevelArray.RoteSpeed;
         this.LimitTime = LevelArray.Time;
         this.Waitnum = LevelArray.TagetNum;
         this.IsReturn = LevelArray.IsReturn;
@@ -184,26 +191,48 @@ cc.Class({
     //检测碰撞跟随转
     CheckCollision: function CheckCollision() {
         cc.audioEngine.stop(this.BulletCurrentAudio);
-        this.Bullet.active = false;
         this.CurLimitNum += 1;
         this.IsCanTap = true;
+        this.WaterAction();
         this.UpdateLimitNum(this.CurLimitNum);
-        this.CreateBingoBullet();
-        this.Bullet = this.CreateBullet();
+        this.Bullet.active = false;
+        this.BingoBullet = this.CreateBingoBullet();
+        if (!this.isOver) {
+            this.Bullet = this.CreateBullet();
+        }
+    },
+
+    //雨滴运动
+    WaterAction: function WaterAction() {
+        this.WaterNode.active = true;
+        var FadeAction1 = cc.fadeTo(0.25, 255);
+        var FadeAction2 = cc.fadeTo(0.25, 0);
+        this.WaterNode.runAction(cc.sequence(FadeAction1, FadeAction2));
     },
 
     //创建打中的子弹
     CreateBingoBullet: function CreateBingoBullet() {
         this.BingoCurrentAudio = cc.audioEngine.play(this.BingoAudio, false, 1);
-        var BingoBullet = cc.instantiate(this.BingoBulletPrefab);
-        this.bulletNode.addChild(BingoBullet, 1);
-        var a = (180 - this.TrunAngle) * Math.PI / 180; //cc.degreesToRadians(180-this.TrunAngle)
-        var b = (180 - this.TrunAngle) * Math.PI / 180;
-        var PosX = Math.sin(a) * 135;
-        var PosY = Math.cos(b) * 135;
-        BingoBullet.x = PosX;
-        BingoBullet.y = PosY;
-        BingoBullet.rotation = 360 - this.TrunAngle;
+        var BingoBullet = undefined;
+        cc.log("====", this.isOver);
+        if (!this.isOver) {
+            BingoBullet = cc.instantiate(this.BingoBulletPrefab);
+        } else {
+            BingoBullet = cc.instantiate(this.FinalBulletPrefab);
+            var action = cc.blink(0.5, 3);
+            BingoBullet.runAction(action);
+        }
+        if (BingoBullet != undefined) {
+            this.bulletNode.addChild(BingoBullet, 1);
+            var a = (180 - this.TrunAngle) * Math.PI / 180; //cc.degreesToRadians(180-this.TrunAngle)
+            var b = (180 - this.TrunAngle) * Math.PI / 180;
+            var PosX = Math.sin(a) * 140;
+            var PosY = Math.cos(b) * 140;
+            BingoBullet.x = PosX;
+            BingoBullet.y = PosY;
+            BingoBullet.rotation = 360 - this.TrunAngle;
+            return BingoBullet;
+        }
     },
 
     //上下边栏的图片置换
@@ -238,48 +267,65 @@ cc.Class({
     },
     GameContinue: function GameContinue() {
         var self = this;
-        self.IsPause = true;
-        self.IsCanTap = false;
-        self.IsInit = false;
-        cc.audioEngine.stop(self.BgCurrentAudio);
-        self.SuccessCurrentAudio = cc.audioEngine.play(self.SuccessAudio, false, 1);
-        if (self.SuccessAlert) {
-            self.SuccessAlert.removeAllChildren(true);
+        if (!self.isOver) {
+            self.IsPause = true;
+            self.IsCanTap = false;
+            self.IsInit = false;
+            this.IsSuccess = true;
+            cc.audioEngine.stop(self.BgCurrentAudio);
+            self.SuccessCurrentAudio = cc.audioEngine.play(self.SuccessAudio, false, 1);
+            if (self.SuccessAlert) {
+                self.SuccessAlert.removeAllChildren(true);
+            }
+            self.SuccessAlert = cc.instantiate(self.SuccessAlertPrefab);
+            self.node.addChild(self.SuccessAlert);
+            self.SuccessAlert.active = true;
+            self.NextBtn = cc.find("next_btn", self.SuccessAlert);
+            if (this.timer) {
+                this.unschedule(this.timer);
+            }
+            CreatorHelper.setNodeClickEvent(self.NextBtn, function () {
+                self.IsSuccess = false;
+                cc.audioEngine.stop(self.SuccessCurrentAudio);
+                self.level += 1;
+                self.InitLevelUi(self.level);
+            });
         }
-        self.SuccessAlert = cc.instantiate(self.SuccessAlertPrefab);
-        self.node.addChild(self.SuccessAlert);
-        self.SuccessAlert.active = true;
-        self.NextBtn = cc.find("next_btn", self.SuccessAlert);
-        if (this.timer) {
-            this.unschedule(this.timer);
+    },
+    ShowOver: function ShowOver() {
+        if (!this.IsSuccess) {
+            var self = this;
+            cc.audioEngine.stop(self.BgCurrentAudio);
+            self.FailAudioCurrentAudio = cc.audioEngine.play(self.FailAudio, false, 1);
+            self.FailAlert = cc.instantiate(self.FailAlertPrefab);
+            self.node.addChild(self.FailAlert);
+            self.FailAlert.active = true;
+            self.ResetBtn = cc.find("next_btn", self.FailAlert);
+            CreatorHelper.setNodeClickEvent(self.ResetBtn, function () {
+                self.FailAlert.active = false;
+
+                cc.audioEngine.stop(self.FailAudioCurrentAudio);
+                self.InitLevelUi(1);
+            });
         }
-        CreatorHelper.setNodeClickEvent(self.NextBtn, function () {
-            cc.audioEngine.stop(self.SuccessCurrentAudio);
-            self.level += 1;
-            self.InitLevelUi(self.level);
-        });
     },
     GameOver: function GameOver() {
         var self = this;
         self.isOver = true;
         self.isCanTap = false;
+
         if (self.FailAlert) {
             self.FailAlert.removeAllChildren(true);
         }
         if (this.timer) {
             this.unschedule(this.timer);
         }
-        cc.audioEngine.stop(self.BgCurrentAudio);
-        self.FailAudioCurrentAudio = cc.audioEngine.play(self.FailAudio, false, 1);
-        self.FailAlert = cc.instantiate(self.FailAlertPrefab);
-        self.node.addChild(self.FailAlert);
-        self.FailAlert.active = true;
-        self.ResetBtn = cc.find("next_btn", self.FailAlert);
-        CreatorHelper.setNodeClickEvent(self.ResetBtn, function () {
-            self.FailAlert.active = false;
-            cc.audioEngine.stop(self.FailAudioCurrentAudio);
-            self.InitLevelUi(1);
-        });
+        if (!this.IsSuccess) {
+            this.Bullet.active = true;
+            var DelayAction = cc.delayTime(0.8);
+            var CallFunc = cc.callFunc(this.ShowOver, this);
+            self.node.runAction(cc.sequence(DelayAction, CallFunc));
+        }
     },
     TapHandle: function TapHandle() {
         var self = this;
@@ -288,7 +334,7 @@ cc.Class({
                 if (self.IsCanTap) {
                     if (!self.isOver) {
                         if (self.IsInit) {
-                            self.IsCanTap = false;
+                            //self.IsCanTap = false
                             self.Bullet.active = true;
                             var MoveAction = cc.moveTo(0.5, cc.p(self.bulletNode.x, self.bulletNode.y)).easing(cc.easeSineOut());
                             self.Bullet.runAction(MoveAction);
@@ -306,16 +352,36 @@ cc.Class({
         //翻转
         if (this.IsReturn) {
             if (this.DirTime == undefined) {
+                this.IsSlow = false;
                 this.DirTime = this.ChangeUpdateTime + this.UnitTools.random(100, 300);
             }
             this.UpdateTime += 1;
             if (this.UpdateTime >= this.DirTime) {
-                this.DirTime = undefined;
-                this.UpdateTime = 0;
-                this.OffsetAngle = -this.OffsetAngle;
+                if (!this.IsSlow) {
+                    this.IsSlow = true;
+                    this.OffsetAngle = -(this.OffsetAngle + this.UnitTools.random(1, 2));
+                }
             }
         }
-        //突然加速
+        if (this.IsSlow) {
+            //突然旋转的时候突然减速
+            if (this.QuickStandTime == undefined) {
+                this.QuickStandTime = this.UnitTools.random(10, 20);
+            }
+            this.QuickTime += 1;
+            if (Math.abs(this.QuickTime) >= this.QuickStandTime) {
+                if (this.OffsetAngle > 0) {
+                    this.OffsetAngle = this.TempOffsetAngle;
+                } else {
+                    this.OffsetAngle = -this.TempOffsetAngle;
+                }
+                this.DirTime = undefined;
+                this.UpdateTime = 0;
+                this.QuickTime = 0;
+                this.IsSlow = false;
+                this.QuickStandTime = undefined;
+            }
+        }
     },
 
     //更新位置

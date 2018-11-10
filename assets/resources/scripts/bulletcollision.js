@@ -15,6 +15,7 @@ cc.Class({
     },
 
     onCollisionEnter: function (other) {
+        cc.log("bullet=onCollisionEnter1")
         if (other.tag == CacheObjects.CollsionTypeOne) {
             this.GameObject.GameOver()
         }

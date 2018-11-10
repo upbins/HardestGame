@@ -1,59 +1,59 @@
-2018-11-09T03:23:21.591Z - normal: Load ~/.CocosCreator/settings.json
-2018-11-09T03:23:21.595Z - normal: checking language setting...
-2018-11-09T03:23:21.595Z - normal: Language: zh
-2018-11-09T03:23:23.816Z - success: protocol editor-framework registered
-2018-11-09T03:23:23.816Z - success: protocol app registered
-2018-11-09T03:23:23.816Z - success: protocol theme registered
-2018-11-09T03:23:23.816Z - success: protocol packages registered
-2018-11-09T03:23:23.816Z - success: protocol unpack registerred
-2018-11-09T03:23:23.816Z - success: protocol disable-commonjs registerred
-2018-11-09T03:23:24.037Z - normal: connected!
-2018-11-09T03:23:24.038Z - normal: Check project D:\CocosCreator\HardestGame
-2018-11-09T03:23:24.040Z - normal: Initializing project D:\CocosCreator\HardestGame
-2018-11-09T03:23:24.059Z - normal: Initializing Cocos2d
-2018-11-09T03:23:27.484Z - normal: Initializing Asset Database
-2018-11-09T03:23:27.773Z - success: protocol uuid registerred
-2018-11-09T03:23:27.774Z - success: protocol db registerred
-2018-11-09T03:23:27.774Z - success: protocol thumbnail registerred
-2018-11-09T03:23:27.774Z - normal: Loading editor/builtin packages
-2018-11-09T03:23:28.451Z - success: assets loaded
-2018-11-09T03:23:28.467Z - success: builder loaded
-2018-11-09T03:23:28.479Z - success: cocos-analytics loaded
-2018-11-09T03:23:28.482Z - success: console loaded
-2018-11-09T03:23:28.551Z - success: fb-instant-games loaded
-2018-11-09T03:23:28.564Z - success: hierarchy loaded
-2018-11-09T03:23:28.567Z - success: inspector loaded
-2018-11-09T03:23:28.568Z - success: keystore loaded
-2018-11-09T03:23:28.573Z - success: node-library loaded
-2018-11-09T03:23:28.575Z - success: package-asset loaded
-2018-11-09T03:23:28.576Z - success: preferences loaded
-2018-11-09T03:23:28.602Z - success: project-exporter loaded
-2018-11-09T03:23:28.636Z - success: project-importer loaded
-2018-11-09T03:23:28.638Z - success: project-settings loaded
-2018-11-09T03:23:28.651Z - success: ui-kit loaded
-2018-11-09T03:23:28.655Z - success: scene loaded
-2018-11-09T03:23:28.656Z - success: sprite-editor loaded
-2018-11-09T03:23:28.666Z - success: store loaded
-2018-11-09T03:23:28.701Z - success: timeline loaded
-2018-11-09T03:23:28.702Z - normal: Loading builtin packages
-2018-11-09T03:23:29.038Z - success: asset-db-debugger loaded
-2018-11-09T03:23:29.046Z - success: code-editor loaded
-2018-11-09T03:23:29.047Z - success: color-picker loaded
-2018-11-09T03:23:29.051Z - success: package-manager loaded
-2018-11-09T03:23:29.051Z - success: qqplay-adapter loaded
-2018-11-09T03:23:29.062Z - success: sdkbox loaded
-2018-11-09T03:23:29.067Z - success: tester loaded
-2018-11-09T03:23:29.070Z - success: ui-grid loaded
-2018-11-09T03:23:29.073Z - success: ui-kit-preview-extra loaded
-2018-11-09T03:23:29.091Z - success: ui-kit-preview loaded
-2018-11-09T03:23:29.111Z - success: ui-tree loaded
-2018-11-09T03:23:29.112Z - success: weapp-adapter loaded
-2018-11-09T03:23:32.196Z - normal: Loading packages
-2018-11-09T03:23:32.202Z - normal: Watching packages
-2018-11-09T03:23:33.125Z - normal: Run Application
-2018-11-09T03:23:38.998Z - success: preview server running at http://localhost:7456
-2018-11-09T03:24:14.635Z - normal: Start building with options : {
-  "actualPlatform": "Android",
+2018-11-09T11:59:05.435Z - normal: Load ~/.CocosCreator/settings.json
+2018-11-09T11:59:05.438Z - normal: checking language setting...
+2018-11-09T11:59:05.438Z - normal: Language: zh
+2018-11-09T11:59:05.997Z - success: protocol editor-framework registered
+2018-11-09T11:59:05.997Z - success: protocol app registered
+2018-11-09T11:59:05.998Z - success: protocol theme registered
+2018-11-09T11:59:05.998Z - success: protocol packages registered
+2018-11-09T11:59:05.998Z - success: protocol unpack registerred
+2018-11-09T11:59:05.999Z - success: protocol disable-commonjs registerred
+2018-11-09T11:59:06.201Z - normal: connected!
+2018-11-09T11:59:06.204Z - normal: Check project /Users/upbins/CodeProject/CreatorProject/HardestGame
+2018-11-09T11:59:06.207Z - normal: Initializing project /Users/upbins/CodeProject/CreatorProject/HardestGame
+2018-11-09T11:59:06.212Z - normal: Initializing Cocos2d
+2018-11-09T11:59:06.961Z - normal: Initializing Asset Database
+2018-11-09T11:59:07.000Z - success: protocol uuid registerred
+2018-11-09T11:59:07.001Z - success: protocol db registerred
+2018-11-09T11:59:07.001Z - success: protocol thumbnail registerred
+2018-11-09T11:59:07.001Z - normal: Loading editor/builtin packages
+2018-11-09T11:59:07.171Z - success: assets loaded
+2018-11-09T11:59:07.175Z - success: builder loaded
+2018-11-09T11:59:07.179Z - success: cocos-analytics loaded
+2018-11-09T11:59:07.186Z - success: console loaded
+2018-11-09T11:59:07.222Z - success: fb-instant-games loaded
+2018-11-09T11:59:07.228Z - success: hierarchy loaded
+2018-11-09T11:59:07.233Z - success: inspector loaded
+2018-11-09T11:59:07.235Z - success: keystore loaded
+2018-11-09T11:59:07.241Z - success: node-library loaded
+2018-11-09T11:59:07.243Z - success: package-asset loaded
+2018-11-09T11:59:07.244Z - success: preferences loaded
+2018-11-09T11:59:07.249Z - success: project-exporter loaded
+2018-11-09T11:59:07.266Z - success: project-importer loaded
+2018-11-09T11:59:07.269Z - success: project-settings loaded
+2018-11-09T11:59:07.273Z - success: ui-kit loaded
+2018-11-09T11:59:07.277Z - success: scene loaded
+2018-11-09T11:59:07.279Z - success: sprite-editor loaded
+2018-11-09T11:59:07.284Z - success: store loaded
+2018-11-09T11:59:07.289Z - success: timeline loaded
+2018-11-09T11:59:07.289Z - normal: Loading builtin packages
+2018-11-09T11:59:07.298Z - success: asset-db-debugger loaded
+2018-11-09T11:59:07.299Z - success: color-picker loaded
+2018-11-09T11:59:07.300Z - success: jsb-adapter loaded
+2018-11-09T11:59:07.304Z - success: package-manager loaded
+2018-11-09T11:59:07.417Z - success: qqplay-adapter loaded
+2018-11-09T11:59:07.424Z - success: sdkbox loaded
+2018-11-09T11:59:07.432Z - success: tester loaded
+2018-11-09T11:59:07.437Z - success: ui-grid loaded
+2018-11-09T11:59:07.440Z - success: ui-kit-preview-extra loaded
+2018-11-09T11:59:07.445Z - success: ui-kit-preview loaded
+2018-11-09T11:59:07.449Z - success: ui-tree loaded
+2018-11-09T11:59:07.450Z - success: weapp-adapter loaded
+2018-11-09T11:59:08.563Z - normal: Loading packages
+2018-11-09T11:59:08.569Z - normal: Watching packages
+2018-11-09T11:59:08.640Z - normal: Run Application
+2018-11-09T11:59:12.202Z - success: preview server running at http://localhost:7456
+2018-11-09T12:01:47.114Z - normal: Start building with options : {
+  "actualPlatform": "android",
   "apiLevel": "android-22",
   "appABIs": [
     "armeabi-v7a",
@@ -61,9 +61,9 @@
   ],
   "appKey": "",
   "appSecret": "",
-  "buildPath": "D:\\CocosCreator\\HardestGameBuild",
+  "buildPath": "/Users/upbins/CodeProject/CreatorProject/HardestGameBuild",
   "debug": false,
-  "dest": "D:\\CocosCreator\\HardestGameBuild\\jsb-default",
+  "dest": "/Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default",
   "embedWebDebugger": false,
   "encryptJs": true,
   "excludeScenes": [],
@@ -93,7 +93,6 @@
     "REMOTE_SERVER_ROOT": "",
     "orientation": "portrait"
   },
-  "renderMode": "0",
   "scenes": [
     "9ecebd2d-32fb-404f-a185-05e22291ad62"
   ],
@@ -113,36 +112,131 @@
   },
   "xxteaKey": "8cda40ca-cc5e-40",
   "zipCompressJs": true,
-  "project": "D:\\CocosCreator\\HardestGame",
+  "project": "/Users/upbins/CodeProject/CreatorProject/HardestGame",
   "projectName": "HardestGame",
   "debugBuildWorker": false
 }
-2018-11-09T03:24:14.642Z - normal: Building D:\CocosCreator\HardestGame
-2018-11-09T03:24:14.642Z - normal: Destination D:\CocosCreator\HardestGameBuild\jsb-default
-2018-11-09T03:24:15.054Z - normal: Delete D:\CocosCreator\HardestGameBuild\jsb-default\res/**/*,D:\CocosCreator\HardestGameBuild\jsb-default\src/*/
-2018-11-09T03:24:22.435Z - normal: Start building assets
-2018-11-09T03:24:22.436Z - normal: Start spawn build-worker
-2018-11-09T03:24:23.105Z - normal: Finish spawn build-worker
-2018-11-09T03:24:23.105Z - normal: Start init build-worker
-2018-11-09T03:24:25.156Z - normal: Finish init build-worker
-2018-11-09T03:24:25.156Z - normal: Start build-assets in worker
-2018-11-09T03:24:25.975Z - info: Enable "内联所有 SpriteFrame" in native platform will increase the package size used in hot update.
-2018-11-09T03:24:26.420Z - normal: Finish build-assets in worker
-2018-11-09T03:24:26.425Z - normal: Finish building assets
-2018-11-09T03:24:26.450Z - normal: Start building plugin scripts
-2018-11-09T03:24:26.515Z - normal: Generating main.js from C:\CocosCreator\resources\static\build-templates\shares\main.js
-2018-11-09T03:24:28.168Z - normal: Built to "D:\CocosCreator\HardestGameBuild\jsb-default" successfully
-2018-11-09T03:24:36.023Z - normal: Start to compile native project. Please wait...
-2018-11-09T03:24:36.024Z - normal: The log file path [ C:\Users\Administrator.SKY-20180829QBE\.CocosCreator\logs\native.log ]
-2018-11-09T03:35:19.295Z - normal: Compile native project successfully.
-2018-11-09T03:40:21.909Z - normal: Start to compile native project. Please wait...
-2018-11-09T03:40:21.912Z - normal: The log file path [ C:\Users\Administrator.SKY-20180829QBE\.CocosCreator\logs\native.log ]
-2018-11-09T03:47:29.403Z - normal: Compile native project successfully.
-2018-11-09T04:09:05.147Z - normal: Start to run project
-2018-11-09T04:09:06.840Z - normal: Start to run project. Please wait...
-2018-11-09T04:09:06.840Z - normal: The log file path [ C:\Users\Administrator.SKY-20180829QBE\.CocosCreator\logs\native.log ]
-2018-11-09T04:34:26.125Z - normal: Start building with options : {
-  "actualPlatform": "Web Mobile",
+2018-11-09T12:01:47.117Z - normal: Building /Users/upbins/CodeProject/CreatorProject/HardestGame
+2018-11-09T12:01:47.117Z - normal: Destination /Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default
+2018-11-09T12:01:47.422Z - normal: Delete /Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default/res/**/*,/Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default/src/*/
+2018-11-09T12:01:47.451Z - normal: Checked Python Version [2.7.10]
+2018-11-09T12:01:48.737Z - normal: Creating native cocos project to  /Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default
+2018-11-09T12:01:57.909Z - normal: Start building assets
+2018-11-09T12:01:57.910Z - normal: Start spawn build-worker
+2018-11-09T12:01:58.670Z - normal: Finish spawn build-worker
+2018-11-09T12:01:58.675Z - normal: Start init build-worker
+2018-11-09T12:02:02.006Z - normal: Finish init build-worker
+2018-11-09T12:02:02.006Z - normal: Start build-assets in worker
+2018-11-09T12:02:02.112Z - info: Enable "内联所有 SpriteFrame" in native platform will increase the package size used in hot update.
+2018-11-09T12:02:02.669Z - normal: Finish build-assets in worker
+2018-11-09T12:02:02.673Z - normal: Finish building assets
+2018-11-09T12:02:02.699Z - normal: Start building plugin scripts
+2018-11-09T12:02:02.747Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-09T12:02:03.073Z - normal: Checked Python Version [2.7.10]
+2018-11-09T12:02:04.473Z - normal: Built to "/Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default" successfully
+2018-11-09T12:02:28.580Z - normal: Checked Python Version [2.7.10]
+2018-11-09T12:02:29.801Z - normal: Start to compile native project. Please wait...
+2018-11-09T12:02:29.801Z - normal: The log file path [ /Users/upbins/.CocosCreator/logs/native.log ]
+2018-11-09T12:05:59.158Z - normal: Compile native project successfully.
+2018-11-09T15:28:01.260Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:43203
+2018-11-09T15:28:01.262Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:43206
+2018-11-09T15:28:13.124Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:43284
+2018-11-09T15:29:44.115Z - error: Error: [AssetLibrary] loading JSON or dependencies failed: Can not get asset url by uuid "56ca6515-4ddb-4c67-b8f3-e69fde1bc2bd", the asset may be deleted.
+    at CCLoader.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/CCAssetLibrary.js:47:33)
+    at /Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/load-pipeline/CCLoader.js:139:46
+    at /Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/platform/utils.js:48:25
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+2018-11-09T15:37:25.566Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:47762
+2018-11-09T15:42:00.177Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:51461
+2018-11-09T15:42:50.865Z - info: 只有预制节点 "starttips" 及其子节点会被保存。
+2018-11-09T15:46:20.628Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54258
+2018-11-09T15:46:20.630Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54261
+2018-11-09T15:46:20.642Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54262
+2018-11-09T15:46:20.643Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54263
+2018-11-09T15:46:20.643Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54264
+2018-11-09T15:46:20.644Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54265
+2018-11-09T15:46:20.644Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54266
+2018-11-09T15:46:20.645Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54267
+2018-11-09T15:46:20.645Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54268
+2018-11-09T15:46:20.646Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54269
+2018-11-09T15:46:20.646Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54270
+2018-11-09T15:46:20.647Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54271
+2018-11-09T15:46:20.647Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54272
+2018-11-09T15:46:20.648Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54273
+2018-11-09T15:46:20.648Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54274
+2018-11-09T15:47:18.390Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54341
+2018-11-09T15:47:18.402Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54342
+2018-11-09T15:47:18.403Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54343
+2018-11-09T15:47:18.403Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54344
+2018-11-09T15:47:18.404Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54345
+2018-11-09T15:47:18.404Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54346
+2018-11-09T15:47:18.405Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54347
+2018-11-09T15:47:18.406Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54348
+2018-11-09T15:47:18.406Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54349
+2018-11-09T15:47:18.406Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:54350
+2018-11-09T15:47:46.500Z - failed: Task [open-edit-mode:[animation]] run error, stop running other tasks.
+ ReferenceError: node is not defined
+    at Object.open (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/edit-mode/modes/animation.js:1:505)
+    at Object.run (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/edit-mode/index.js:1:1635)
+    at _queue.s.queue (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/lib/tasks.js:1:539)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:987:13
+    at Object.process (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:953:21)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:911:19
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:44:16
+    at Object.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/lib/tasks.js:1:370)
+    at Object.run (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/edit-mode/index.js:1:1740)
+    at _queue.s.queue (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/lib/tasks.js:1:539)
+2018-11-09T15:48:09.162Z - failed: Task [pop-edit-mode:[undefined]] run error, stop running other tasks.
+ TypeError: Cannot read property 'getAnimationState' of null
+    at Object.exit (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/edit-mode/modes/animation.js:1:1338)
+    at e.save (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/edit-mode/modes/animation.js:1:1240)
+    at Object.y [as save] (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/utils/animation.js:1:4133)
+    at Object.save (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/edit-mode/modes/animation.js:1:1228)
+    at Object.close (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/edit-mode/modes/animation.js:1:1864)
+    at Object.run (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/edit-mode/index.js:1:817)
+    at _queue.s.queue (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/lib/tasks.js:1:539)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:987:13
+    at Immediate.process (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:953:21)
+    at runCallback (timers.js:672:20)
+2018-11-10T04:50:54.864Z - warn: The Asset used by component "cc.Sprite" is missing. Detailed information:
+Node path: "Water2"
+Missing uuid: "9a07e354-f93c-496f-9977-bb17c777ed10"
+
+2018-11-10T05:32:55.225Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:219066
+2018-11-10T05:34:11.653Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:220721
+2018-11-10T05:34:11.654Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:220728
+2018-11-10T05:34:11.654Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:220729
+2018-11-10T05:41:17.435Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:229184
+2018-11-10T05:41:51.920Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:229807
+2018-11-10T06:29:13.529Z - failed: [db-task][sync-changes] Failed to import asset /Users/upbins/CodeProject/CreatorProject/HardestGame/assets/resources/scripts/game.js, message: Compile error: SyntaxError: /Users/upbins/CodeProject/CreatorProject/HardestGame/assets/resources/scripts/game.js: Unexpected token, expected , (346:20)
+  344 |                     this.IsSlow = true
+  345 |                     this.OffsetAngle = -(this.OffsetAngle + this.UnitTools.random(2,3)
+> 346 |                     cc.log("==========>1", this.OffsetAngle)
+      |                     ^
+  347 |                 }
+  348 |             }
+  349 |         }
+    at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4454:13)
+    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1761:8)
+    at Parser.pp.expect (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1749:33)
+    at Parser.pp$3.parseParenAndDistinguishExpression (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3814:12)
+    at Parser.pp$3.parseExprAtom (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3709:19)
+    at Parser.pp$3.parseExprSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3474:19)
+    at Parser.pp$3.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3455:26)
+    at Parser.pp$3.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3381:19)
+2018-11-10T07:01:33.830Z - normal: Checked Python Version [2.7.10]
+2018-11-10T07:01:35.093Z - normal: Start to compile native project. Please wait...
+2018-11-10T07:01:35.093Z - normal: The log file path [ /Users/upbins/.CocosCreator/logs/native.log ]
+2018-11-10T07:01:54.302Z - normal: Compile native project successfully.
+2018-11-10T07:03:10.515Z - normal: Checked Python Version [2.7.10]
+2018-11-10T07:03:11.673Z - normal: Start to compile native project. Please wait...
+2018-11-10T07:03:11.674Z - normal: The log file path [ /Users/upbins/.CocosCreator/logs/native.log ]
+2018-11-10T07:03:20.902Z - normal: Compile native project successfully.
+2018-11-10T07:13:21.460Z - normal: Start building with options : {
+  "actualPlatform": "android",
   "apiLevel": "android-22",
   "appABIs": [
     "armeabi-v7a",
@@ -150,10 +244,10 @@
   ],
   "appKey": "",
   "appSecret": "",
-  "buildPath": "D:\\CocosCreator\\HardestGameBuild",
-  "debug": true,
-  "dest": "D:\\CocosCreator\\HardestGameBuild\\web-mobile",
-  "embedWebDebugger": true,
+  "buildPath": "/Users/upbins/CodeProject/CreatorProject/HardestGameBuild",
+  "debug": false,
+  "dest": "/Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default",
+  "embedWebDebugger": false,
   "encryptJs": true,
   "excludeScenes": [],
   "excludedModules": [],
@@ -174,7 +268,7 @@
     "upsideDown": false
   },
   "packageName": "org.cocos2d.HardestGame",
-  "platform": "web-mobile",
+  "platform": "android",
   "previewHeight": "720",
   "previewWidth": "1280",
   "privateKey": "",
@@ -182,7 +276,6 @@
     "REMOTE_SERVER_ROOT": "",
     "orientation": "portrait"
   },
-  "renderMode": "0",
   "scenes": [
     "9ecebd2d-32fb-404f-a185-05e22291ad62"
   ],
@@ -202,32 +295,499 @@
   },
   "xxteaKey": "8cda40ca-cc5e-40",
   "zipCompressJs": true,
-  "project": "D:\\CocosCreator\\HardestGame",
+  "project": "/Users/upbins/CodeProject/CreatorProject/HardestGame",
   "projectName": "HardestGame",
   "debugBuildWorker": false
 }
-2018-11-09T04:34:26.128Z - normal: Building D:\CocosCreator\HardestGame
-2018-11-09T04:34:26.128Z - normal: Destination D:\CocosCreator\HardestGameBuild\web-mobile
-2018-11-09T04:34:26.131Z - normal: Delete D:\CocosCreator\HardestGameBuild\web-mobile\**\*
-2018-11-09T04:34:30.094Z - normal: Start building assets
-2018-11-09T04:34:30.094Z - normal: Start spawn build-worker
-2018-11-09T04:34:30.860Z - normal: Finish spawn build-worker
-2018-11-09T04:34:30.861Z - normal: Start init build-worker
-2018-11-09T04:34:33.171Z - normal: Finish init build-worker
-2018-11-09T04:34:33.171Z - normal: Start build-assets in worker
-2018-11-09T04:34:34.217Z - normal: Finish build-assets in worker
-2018-11-09T04:34:34.225Z - normal: Finish building assets
-2018-11-09T04:34:34.252Z - normal: Start building plugin scripts
-2018-11-09T04:34:34.479Z - normal: Generating main.js from C:\CocosCreator\resources\static\build-templates\shares\main.js
-2018-11-09T04:34:34.510Z - normal: Generating html from C:\CocosCreator\resources\static\build-templates\web-mobile\template-dev\index.html
-2018-11-09T04:34:34.870Z - normal: Built to "D:\CocosCreator\HardestGameBuild\web-mobile" successfully
-2018-11-09T04:38:51.643Z - failed: Error: Failed to run project. The log file path [ C:\Users\Administrator.SKY-20180829QBE\.CocosCreator\logs\native.log ]
-    at ChildProcess.handleChildProcess (C:\CocosCreator\resources\app.asar\editor\core\native-utils.js:1:22221)
-    at ChildProcess.e.on (C:\CocosCreator\resources\app.asar\editor\core\native-utils.js:1:8846)
-    at emitTwo (events.js:106:13)
-    at ChildProcess.emit (events.js:194:7)
-    at maybeClose (internal/child_process.js:899:16)
-    at Socket.<anonymous> (internal/child_process.js:342:11)
-    at emitOne (events.js:96:13)
-    at Socket.emit (events.js:191:7)
-    at Pipe._handle.close [as _onclose] (net.js:510:12)
+2018-11-10T07:13:21.463Z - normal: Building /Users/upbins/CodeProject/CreatorProject/HardestGame
+2018-11-10T07:13:21.463Z - normal: Destination /Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default
+2018-11-10T07:13:21.464Z - normal: Delete /Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default/res/**/*,/Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default/src/*/
+2018-11-10T07:13:21.574Z - normal: Checked Python Version [2.7.10]
+2018-11-10T07:13:24.826Z - normal: Start building assets
+2018-11-10T07:13:24.827Z - normal: Start spawn build-worker
+2018-11-10T07:13:25.453Z - normal: Finish spawn build-worker
+2018-11-10T07:13:25.453Z - normal: Start init build-worker
+2018-11-10T07:13:28.261Z - normal: Finish init build-worker
+2018-11-10T07:13:28.261Z - normal: Start build-assets in worker
+2018-11-10T07:13:28.366Z - info: Enable "内联所有 SpriteFrame" in native platform will increase the package size used in hot update.
+2018-11-10T07:13:28.827Z - normal: Finish build-assets in worker
+2018-11-10T07:13:28.838Z - normal: Finish building assets
+2018-11-10T07:13:28.865Z - normal: Start building plugin scripts
+2018-11-10T07:13:28.933Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-10T07:13:29.264Z - normal: Checked Python Version [2.7.10]
+2018-11-10T07:13:30.526Z - normal: Built to "/Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default" successfully
+2018-11-10T07:13:33.465Z - normal: Checked Python Version [2.7.10]
+2018-11-10T07:13:34.623Z - normal: Start to compile native project. Please wait...
+2018-11-10T07:13:34.623Z - normal: The log file path [ /Users/upbins/.CocosCreator/logs/native.log ]
+2018-11-10T07:14:06.541Z - normal: Compile native project successfully.
+2018-11-10T07:32:27.071Z - normal: Start building with options : {
+  "actualPlatform": "android",
+  "apiLevel": "android-22",
+  "appABIs": [
+    "armeabi-v7a",
+    "armeabi"
+  ],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/upbins/CodeProject/CreatorProject/HardestGameBuild",
+  "debug": false,
+  "dest": "/Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": false,
+  "inlineSpriteFrames_native": false,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": false,
+    "landscapeRight": false,
+    "portrait": true,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.HardestGame",
+  "platform": "android",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "9ecebd2d-32fb-404f-a185-05e22291ad62"
+  ],
+  "sourceMaps": false,
+  "startScene": "9ecebd2d-32fb-404f-a185-05e22291ad62",
+  "template": "default",
+  "title": "HardestGame",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "8cda40ca-cc5e-40",
+  "zipCompressJs": true,
+  "project": "/Users/upbins/CodeProject/CreatorProject/HardestGame",
+  "projectName": "HardestGame",
+  "debugBuildWorker": false
+}
+2018-11-10T07:32:27.074Z - normal: Building /Users/upbins/CodeProject/CreatorProject/HardestGame
+2018-11-10T07:32:27.074Z - normal: Destination /Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default
+2018-11-10T07:32:27.075Z - normal: Delete /Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default/res/**/*,/Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default/src/*/
+2018-11-10T07:32:27.177Z - normal: Checked Python Version [2.7.10]
+2018-11-10T07:32:30.352Z - normal: Start building assets
+2018-11-10T07:32:30.352Z - normal: Start spawn build-worker
+2018-11-10T07:32:30.986Z - normal: Finish spawn build-worker
+2018-11-10T07:32:30.986Z - normal: Start init build-worker
+2018-11-10T07:32:33.834Z - normal: Finish init build-worker
+2018-11-10T07:32:33.834Z - normal: Start build-assets in worker
+2018-11-10T07:32:34.236Z - normal: Finish build-assets in worker
+2018-11-10T07:32:34.239Z - normal: Finish building assets
+2018-11-10T07:32:34.259Z - normal: Start building plugin scripts
+2018-11-10T07:32:34.311Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-10T07:32:34.693Z - normal: Checked Python Version [2.7.10]
+2018-11-10T07:32:35.945Z - normal: Built to "/Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default" successfully
+2018-11-10T07:32:54.093Z - normal: Checked Python Version [2.7.10]
+2018-11-10T07:32:55.249Z - normal: Start to compile native project. Please wait...
+2018-11-10T07:32:55.250Z - normal: The log file path [ /Users/upbins/.CocosCreator/logs/native.log ]
+2018-11-10T07:33:25.896Z - normal: Compile native project successfully.
+2018-11-10T07:42:53.456Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:443542
+2018-11-10T07:42:53.458Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:443550
+2018-11-10T07:45:01.694Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:447144
+2018-11-10T07:45:52.880Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:448358
+2018-11-10T07:48:07.405Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:451060
+2018-11-10T07:48:07.407Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:451061
+2018-11-10T07:48:07.408Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:451062
+2018-11-10T07:48:07.408Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:451063
+2018-11-10T07:48:07.409Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:451064
+2018-11-10T07:48:07.410Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:451065
+2018-11-10T07:48:07.410Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:451066
+2018-11-10T07:48:07.411Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:451067
+2018-11-10T07:48:07.411Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:451068
+2018-11-10T07:48:46.606Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/builder/panel/builder.js:1:15421)
+    at EventEmitter.o.on.n (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:3753)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-11-10T07:48:49.234Z - warn: The Node referenced by component "game" is invalid. Detailed information:
+Node path: "Canvas/gameLayout"
+
+2018-11-10T07:48:49.235Z - warn: The Node referenced by component "game" is invalid. Detailed information:
+Node path: "Canvas/gameLayout"
+
+2018-11-10T07:48:49.501Z - warn: The Node referenced by component "game" is invalid. Detailed information:
+Node path: "Canvas/gameLayout"
+
+2018-11-10T07:48:49.502Z - warn: The Node referenced by component "game" is invalid. Detailed information:
+Node path: "Canvas/gameLayout"
+
+2018-11-10T07:48:49.705Z - warn: The Node referenced by component "game" is invalid. Detailed information:
+Node path: "Canvas/gameLayout"
+
+2018-11-10T07:48:49.705Z - warn: The Node referenced by component "game" is invalid. Detailed information:
+Node path: "Canvas/gameLayout"
+
+2018-11-10T07:48:49.897Z - warn: The Node referenced by component "game" is invalid. Detailed information:
+Node path: "Canvas/gameLayout"
+
+2018-11-10T07:48:49.897Z - warn: The Node referenced by component "game" is invalid. Detailed information:
+Node path: "Canvas/gameLayout"
+
+2018-11-10T07:51:16.465Z - normal: Start building with options : {
+  "actualPlatform": "android",
+  "apiLevel": "android-22",
+  "appABIs": [
+    "armeabi-v7a",
+    "armeabi"
+  ],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/upbins/CodeProject/CreatorProject/HardestGameBuild",
+  "debug": false,
+  "dest": "/Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": false,
+  "inlineSpriteFrames_native": false,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": false,
+    "landscapeRight": false,
+    "portrait": true,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.HardestGame",
+  "platform": "android",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "9ecebd2d-32fb-404f-a185-05e22291ad62"
+  ],
+  "sourceMaps": false,
+  "startScene": "9ecebd2d-32fb-404f-a185-05e22291ad62",
+  "template": "default",
+  "title": "HardestGame",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "8cda40ca-cc5e-40",
+  "zipCompressJs": true,
+  "project": "/Users/upbins/CodeProject/CreatorProject/HardestGame",
+  "projectName": "HardestGame",
+  "debugBuildWorker": false
+}
+2018-11-10T07:51:16.467Z - normal: Building /Users/upbins/CodeProject/CreatorProject/HardestGame
+2018-11-10T07:51:16.468Z - normal: Destination /Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default
+2018-11-10T07:51:16.469Z - normal: Delete /Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default/res/**/*,/Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default/src/*/
+2018-11-10T07:51:16.645Z - normal: Checked Python Version [2.7.10]
+2018-11-10T07:51:19.843Z - normal: Start building assets
+2018-11-10T07:51:19.844Z - normal: Start spawn build-worker
+2018-11-10T07:51:20.486Z - normal: Finish spawn build-worker
+2018-11-10T07:51:20.486Z - normal: Start init build-worker
+2018-11-10T07:51:23.393Z - normal: Finish init build-worker
+2018-11-10T07:51:23.393Z - normal: Start build-assets in worker
+2018-11-10T07:51:23.839Z - normal: Finish build-assets in worker
+2018-11-10T07:51:23.842Z - normal: Finish building assets
+2018-11-10T07:51:23.861Z - normal: Start building plugin scripts
+2018-11-10T07:51:23.907Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-10T07:51:24.264Z - normal: Checked Python Version [2.7.10]
+2018-11-10T07:51:25.527Z - normal: Built to "/Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default" successfully
+2018-11-10T07:52:36.706Z - normal: Checked Python Version [2.7.10]
+2018-11-10T07:52:37.875Z - normal: Start to compile native project. Please wait...
+2018-11-10T07:52:37.875Z - normal: The log file path [ /Users/upbins/.CocosCreator/logs/native.log ]
+2018-11-10T07:53:09.017Z - normal: Compile native project successfully.
+2018-11-10T08:00:36.323Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:473731
+2018-11-10T08:01:28.698Z - normal: Start building with options : {
+  "actualPlatform": "android",
+  "apiLevel": "android-22",
+  "appABIs": [
+    "armeabi-v7a",
+    "armeabi"
+  ],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/upbins/CodeProject/CreatorProject/HardestGameBuild",
+  "debug": false,
+  "dest": "/Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": false,
+  "inlineSpriteFrames_native": false,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": false,
+    "landscapeRight": false,
+    "portrait": true,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.HardestGame",
+  "platform": "android",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "9ecebd2d-32fb-404f-a185-05e22291ad62"
+  ],
+  "sourceMaps": false,
+  "startScene": "9ecebd2d-32fb-404f-a185-05e22291ad62",
+  "template": "default",
+  "title": "HardestGame",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "8cda40ca-cc5e-40",
+  "zipCompressJs": true,
+  "project": "/Users/upbins/CodeProject/CreatorProject/HardestGame",
+  "projectName": "HardestGame",
+  "debugBuildWorker": false
+}
+2018-11-10T08:01:28.700Z - normal: Building /Users/upbins/CodeProject/CreatorProject/HardestGame
+2018-11-10T08:01:28.700Z - normal: Destination /Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default
+2018-11-10T08:01:28.701Z - normal: Delete /Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default/res/**/*,/Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default/src/*/
+2018-11-10T08:01:28.880Z - normal: Checked Python Version [2.7.10]
+2018-11-10T08:01:32.002Z - normal: Start building assets
+2018-11-10T08:01:32.002Z - normal: Start spawn build-worker
+2018-11-10T08:01:32.617Z - normal: Finish spawn build-worker
+2018-11-10T08:01:32.617Z - normal: Start init build-worker
+2018-11-10T08:01:35.370Z - normal: Finish init build-worker
+2018-11-10T08:01:35.371Z - normal: Start build-assets in worker
+2018-11-10T08:01:35.781Z - normal: Finish build-assets in worker
+2018-11-10T08:01:35.783Z - normal: Finish building assets
+2018-11-10T08:01:35.799Z - normal: Start building plugin scripts
+2018-11-10T08:01:35.845Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-10T08:01:36.227Z - normal: Checked Python Version [2.7.10]
+2018-11-10T08:01:37.479Z - normal: Built to "/Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default" successfully
+2018-11-10T08:01:38.936Z - normal: Checked Python Version [2.7.10]
+2018-11-10T08:01:40.093Z - normal: Start to compile native project. Please wait...
+2018-11-10T08:01:40.093Z - normal: The log file path [ /Users/upbins/.CocosCreator/logs/native.log ]
+2018-11-10T08:02:10.847Z - normal: Compile native project successfully.
+2018-11-10T08:10:07.233Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/builder/panel/builder.js:1:15421)
+    at EventEmitter.o.on.n (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:3753)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-11-10T08:10:13.255Z - normal: Start building with options : {
+  "actualPlatform": "android",
+  "apiLevel": "android-22",
+  "appABIs": [
+    "armeabi-v7a",
+    "armeabi"
+  ],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/upbins/CodeProject/CreatorProject/HardestGameBuild",
+  "debug": false,
+  "dest": "/Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": false,
+    "landscapeRight": false,
+    "portrait": true,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.HardestGame",
+  "platform": "android",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "9ecebd2d-32fb-404f-a185-05e22291ad62"
+  ],
+  "sourceMaps": false,
+  "startScene": "9ecebd2d-32fb-404f-a185-05e22291ad62",
+  "template": "default",
+  "title": "HardestGame",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "8cda40ca-cc5e-40",
+  "zipCompressJs": true,
+  "project": "/Users/upbins/CodeProject/CreatorProject/HardestGame",
+  "projectName": "HardestGame",
+  "debugBuildWorker": false
+}
+2018-11-10T08:10:13.257Z - normal: Building /Users/upbins/CodeProject/CreatorProject/HardestGame
+2018-11-10T08:10:13.257Z - normal: Destination /Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default
+2018-11-10T08:10:13.258Z - normal: Delete /Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default/res/**/*,/Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default/src/*/
+2018-11-10T08:10:13.428Z - normal: Checked Python Version [2.7.10]
+2018-11-10T08:10:16.589Z - normal: Start building assets
+2018-11-10T08:10:16.589Z - normal: Start spawn build-worker
+2018-11-10T08:10:17.225Z - normal: Finish spawn build-worker
+2018-11-10T08:10:17.225Z - normal: Start init build-worker
+2018-11-10T08:10:20.044Z - normal: Finish init build-worker
+2018-11-10T08:10:20.045Z - normal: Start build-assets in worker
+2018-11-10T08:10:20.127Z - info: Enable "内联所有 SpriteFrame" in native platform will increase the package size used in hot update.
+2018-11-10T08:10:20.628Z - normal: Finish build-assets in worker
+2018-11-10T08:10:20.630Z - normal: Finish building assets
+2018-11-10T08:10:20.649Z - normal: Start building plugin scripts
+2018-11-10T08:10:20.696Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-10T08:10:21.007Z - normal: Checked Python Version [2.7.10]
+2018-11-10T08:10:22.270Z - normal: Built to "/Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default" successfully
+2018-11-10T08:11:12.868Z - normal: Checked Python Version [2.7.10]
+2018-11-10T08:11:14.025Z - normal: Start to compile native project. Please wait...
+2018-11-10T08:11:14.025Z - normal: The log file path [ /Users/upbins/.CocosCreator/logs/native.log ]
+2018-11-10T08:11:32.318Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:494259
+2018-11-10T08:11:44.245Z - normal: Compile native project successfully.
+2018-11-10T08:13:00.619Z - normal: Start building with options : {
+  "actualPlatform": "android",
+  "apiLevel": "android-22",
+  "appABIs": [
+    "armeabi-v7a",
+    "armeabi"
+  ],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/upbins/CodeProject/CreatorProject/HardestGameBuild",
+  "debug": false,
+  "dest": "/Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": false,
+    "landscapeRight": false,
+    "portrait": true,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.HardestGame",
+  "platform": "android",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "9ecebd2d-32fb-404f-a185-05e22291ad62"
+  ],
+  "sourceMaps": false,
+  "startScene": "9ecebd2d-32fb-404f-a185-05e22291ad62",
+  "template": "default",
+  "title": "HardestGame",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "8cda40ca-cc5e-40",
+  "zipCompressJs": true,
+  "project": "/Users/upbins/CodeProject/CreatorProject/HardestGame",
+  "projectName": "HardestGame",
+  "debugBuildWorker": false
+}
+2018-11-10T08:13:00.621Z - normal: Building /Users/upbins/CodeProject/CreatorProject/HardestGame
+2018-11-10T08:13:00.621Z - normal: Destination /Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default
+2018-11-10T08:13:00.622Z - normal: Delete /Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default/res/**/*,/Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default/src/*/
+2018-11-10T08:13:00.734Z - normal: Checked Python Version [2.7.10]
+2018-11-10T08:13:03.872Z - normal: Start building assets
+2018-11-10T08:13:03.873Z - normal: Start spawn build-worker
+2018-11-10T08:13:04.493Z - normal: Finish spawn build-worker
+2018-11-10T08:13:04.493Z - normal: Start init build-worker
+2018-11-10T08:13:07.260Z - normal: Finish init build-worker
+2018-11-10T08:13:07.260Z - normal: Start build-assets in worker
+2018-11-10T08:13:07.356Z - info: Enable "内联所有 SpriteFrame" in native platform will increase the package size used in hot update.
+2018-11-10T08:13:07.860Z - normal: Finish build-assets in worker
+2018-11-10T08:13:07.862Z - normal: Finish building assets
+2018-11-10T08:13:07.881Z - normal: Start building plugin scripts
+2018-11-10T08:13:07.929Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-10T08:13:08.264Z - normal: Checked Python Version [2.7.10]
+2018-11-10T08:13:09.531Z - normal: Built to "/Users/upbins/CodeProject/CreatorProject/HardestGameBuild/jsb-default" successfully
+2018-11-10T08:13:15.861Z - normal: Checked Python Version [2.7.10]
+2018-11-10T08:13:17.016Z - normal: Start to compile native project. Please wait...
+2018-11-10T08:13:17.016Z - normal: The log file path [ /Users/upbins/.CocosCreator/logs/native.log ]
+2018-11-10T08:13:46.938Z - normal: Compile native project successfully.
