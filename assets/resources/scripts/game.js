@@ -62,7 +62,42 @@ cc.Class({
         
     // },
     start() {
+ 
+        this.RightButtonOn = false
+        this.node.on(cc.Node.EventType.MOUSE_DOWN, this.onMouseDown, this.node);
+        this.node.on(cc.Node.EventType.MOUSE_UP, this.onMouseUp, this.node);
+        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.OnKeyBackUp, this.node);
         this.InitConfig();
+    },
+    onDestroy () {
+        cc.systemEvent.off(cc.SystemEvent.EventType.KEY_UP, this.OnKeyBackUp, this);
+    },
+    OnKeyBackUp:function(event){
+        if(cc.sys.os == cc.sys.OS_ANDROID){ 
+            switch(event.keyCode) {
+                case cc.macro.keyCode.back:
+                    cc.director.end()
+                    break;
+                case cc.macro.keyCode.a:
+                    cc.director.end()
+                    break;
+            }
+        }
+    },
+    onMouseDown: function(event) {
+        var mouseType = event.getButton();
+        if (mouseType === cc.Event.EventMouse.BUTTON_RIGHT) {
+            this.RightButtonOn = true
+            //cc.log("=======鼠标右键按下")
+        }
+    },
+    onMouseUp: function(event) {
+        var mouseType = event.getButton();
+        if (mouseType === cc.Event.EventMouse.BUTTON_RIGHT) {
+            // 鼠标右键释放
+            cc.director.end()
+            //cc.log("=======鼠标右键释放")
+        }
     },
     // //初始化相关关卡数据
     InitConfig() {
@@ -195,8 +230,8 @@ cc.Class({
     //雨滴运动
     WaterAction(){
         this.WaterNode.active = true
-        var FadeAction1 = cc.fadeTo(0.25, 255)
-        var FadeAction2 = cc.fadeTo(0.25, 0)
+        var FadeAction1 = cc.fadeTo(0.1, 255)
+        var FadeAction2 = cc.fadeTo(0.1, 0)
         this.WaterNode.runAction(cc.sequence(FadeAction1,FadeAction2));
     },
     //创建打中的子弹
@@ -321,12 +356,14 @@ cc.Class({
                 if (self.IsCanTap) {
                     if (!self.isOver) {
                         if (self.IsInit){
-                            //self.IsCanTap = false
-                            self.Bullet.active = true
-                            var MoveAction = cc.moveTo(0.5,cc.p(self.bulletNode.x,self.bulletNode.y)).easing(cc.easeSineOut()); 
-                            self.Bullet.runAction(MoveAction)
-                            cc.audioEngine.stop(self.BingoCurrentAudio);
-                            self.BulletCurrentAudio = cc.audioEngine.play(self.BulletAudio, false, 1);
+                            if (!self.RightButtonOn){
+                                cc.log("@=================>")
+                                self.Bullet.active = true
+                                var MoveAction = cc.moveTo(0.5,cc.p(self.bulletNode.x,self.bulletNode.y)).easing(cc.easeSineOut()); 
+                                self.Bullet.runAction(MoveAction)
+                                cc.audioEngine.stop(self.BingoCurrentAudio);
+                                self.BulletCurrentAudio = cc.audioEngine.play(self.BulletAudio, false, 1);
+                            }
                         }
                     }
                 

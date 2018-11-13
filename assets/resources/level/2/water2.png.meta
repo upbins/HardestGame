@@ -1,10 +1,9 @@
 {
-  "ver": "2.2.0",
+  "ver": "2.0.0",
   "uuid": "bb4525ea-8d6b-48a0-b30c-55962fef3416",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
-  "premultiplyAlpha": false,
   "subMetas": {
     "water2": {
       "ver": "1.0.3",
@@ -17,10 +16,10 @@
       "offsetY": 0,
       "trimX": 0,
       "trimY": 0,
-      "width": 96,
-      "height": 85,
-      "rawWidth": 96,
-      "rawHeight": 85,
+      "width": 136,
+      "height": 58,
+      "rawWidth": 136,
+      "rawHeight": 58,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,

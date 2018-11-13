@@ -1,11 +1,11 @@
 {
-  "actualPlatform": "android",
+  "actualPlatform": "Android",
   "apiLevel": "android-22",
   "appABIs": [
     "armeabi-v7a",
     "armeabi"
   ],
-  "buildPath": "/Users/upbins/CodeProject/CreatorProject/HardestGameBuild",
+  "buildPath": "D:\\CocosCreator\\HardestGameBuild",
   "debug": false,
   "embedWebDebugger": true,
   "keystoreAlias": "",
