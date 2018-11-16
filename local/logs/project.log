@@ -1,147 +1,54 @@
-2018-11-13T03:58:03.931Z - normal: Load ~/.CocosCreator/settings.json
-2018-11-13T03:58:03.937Z - normal: checking language setting...
-2018-11-13T03:58:03.938Z - normal: Language: zh
-2018-11-13T03:58:05.701Z - success: protocol editor-framework registered
-2018-11-13T03:58:05.701Z - success: protocol app registered
-2018-11-13T03:58:05.701Z - success: protocol theme registered
-2018-11-13T03:58:05.701Z - success: protocol packages registered
-2018-11-13T03:58:05.701Z - success: protocol unpack registerred
-2018-11-13T03:58:05.701Z - success: protocol disable-commonjs registerred
-2018-11-13T03:58:05.972Z - normal: connected!
-2018-11-13T03:58:05.973Z - normal: Check project D:\CocosCreator\HardestGame
-2018-11-13T03:58:05.974Z - normal: Initializing project D:\CocosCreator\HardestGame
-2018-11-13T03:58:05.976Z - normal: Initializing Cocos2d
-2018-11-13T03:58:06.255Z - normal: Initializing Asset Database
-2018-11-13T03:58:06.298Z - success: protocol uuid registerred
-2018-11-13T03:58:06.298Z - success: protocol db registerred
-2018-11-13T03:58:06.298Z - success: protocol thumbnail registerred
-2018-11-13T03:58:06.299Z - normal: Loading editor/builtin packages
-2018-11-13T03:58:06.477Z - success: assets loaded
-2018-11-13T03:58:06.481Z - success: builder loaded
-2018-11-13T03:58:06.485Z - success: cocos-analytics loaded
-2018-11-13T03:58:06.488Z - success: console loaded
-2018-11-13T03:58:06.541Z - success: fb-instant-games loaded
-2018-11-13T03:58:06.548Z - success: hierarchy loaded
-2018-11-13T03:58:06.551Z - success: inspector loaded
-2018-11-13T03:58:06.552Z - success: keystore loaded
-2018-11-13T03:58:06.555Z - success: node-library loaded
-2018-11-13T03:58:06.557Z - success: package-asset loaded
-2018-11-13T03:58:06.559Z - success: preferences loaded
-2018-11-13T03:58:06.562Z - success: project-exporter loaded
-2018-11-13T03:58:06.582Z - success: project-importer loaded
-2018-11-13T03:58:06.583Z - success: project-settings loaded
-2018-11-13T03:58:06.585Z - success: ui-kit loaded
-2018-11-13T03:58:06.588Z - success: scene loaded
-2018-11-13T03:58:06.591Z - success: sprite-editor loaded
-2018-11-13T03:58:06.596Z - success: store loaded
-2018-11-13T03:58:06.600Z - success: timeline loaded
-2018-11-13T03:58:06.600Z - normal: Loading builtin packages
-2018-11-13T03:58:06.602Z - success: asset-db-debugger loaded
-2018-11-13T03:58:06.604Z - success: code-editor loaded
-2018-11-13T03:58:06.606Z - success: color-picker loaded
-2018-11-13T03:58:06.610Z - success: package-manager loaded
-2018-11-13T03:58:06.611Z - success: qqplay-adapter loaded
-2018-11-13T03:58:06.615Z - success: sdkbox loaded
-2018-11-13T03:58:06.618Z - success: tester loaded
-2018-11-13T03:58:06.625Z - success: ui-grid loaded
-2018-11-13T03:58:06.629Z - success: ui-kit-preview-extra loaded
-2018-11-13T03:58:06.630Z - success: ui-kit-preview loaded
-2018-11-13T03:58:06.632Z - success: ui-tree loaded
-2018-11-13T03:58:06.632Z - success: weapp-adapter loaded
-2018-11-13T03:58:08.076Z - normal: Loading packages
-2018-11-13T03:58:08.083Z - normal: Watching packages
-2018-11-13T03:58:08.657Z - normal: Run Application
-2018-11-13T03:58:10.081Z - success: preview server running at http://localhost:7456
-2018-11-13T04:00:16.390Z - normal: Start building with options : {
-  "actualPlatform": "Android",
-  "apiLevel": "android-22",
-  "appABIs": [
-    "armeabi-v7a",
-    "armeabi"
-  ],
-  "appKey": "",
-  "appSecret": "",
-  "buildPath": "D:\\CocosCreator\\HardestGameBuild",
-  "debug": false,
-  "dest": "D:\\CocosCreator\\HardestGameBuild\\jsb-default",
-  "embedWebDebugger": false,
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [],
-  "fb-instant-games": {},
-  "includeAnySDK": false,
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "jailbreakPlatform": false,
-  "md5Cache": true,
-  "mergeStartScene": false,
-  "oauthLoginServer": "",
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": false,
-    "landscapeRight": false,
-    "portrait": true,
-    "upsideDown": false
-  },
-  "packageName": "org.cocos2d.HardestGame",
-  "platform": "android",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "privateKey": "",
-  "qqplay": {
-    "REMOTE_SERVER_ROOT": "",
-    "orientation": "portrait"
-  },
-  "renderMode": "0",
-  "scenes": [
-    "9ecebd2d-32fb-404f-a185-05e22291ad62"
-  ],
-  "sourceMaps": false,
-  "startScene": "9ecebd2d-32fb-404f-a185-05e22291ad62",
-  "template": "default",
-  "title": "HardestGame",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "portrait",
-  "wechatgame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
-    "isSubdomain": false,
-    "orientation": "portrait",
-    "subContext": ""
-  },
-  "xxteaKey": "8cda40ca-cc5e-40",
-  "zipCompressJs": true,
-  "project": "D:\\CocosCreator\\HardestGame",
-  "projectName": "HardestGame",
-  "debugBuildWorker": false
-}
-2018-11-13T04:00:16.393Z - normal: Building D:\CocosCreator\HardestGame
-2018-11-13T04:00:16.393Z - normal: Destination D:\CocosCreator\HardestGameBuild\jsb-default
-2018-11-13T04:00:16.741Z - normal: Delete D:\CocosCreator\HardestGameBuild\jsb-default\res/**/*,D:\CocosCreator\HardestGameBuild\jsb-default\src/*/
-2018-11-13T04:00:21.134Z - normal: Start building assets
-2018-11-13T04:00:21.134Z - normal: Start spawn build-worker
-2018-11-13T04:00:22.150Z - normal: Finish spawn build-worker
-2018-11-13T04:00:22.150Z - normal: Start init build-worker
-2018-11-13T04:00:25.119Z - normal: Finish init build-worker
-2018-11-13T04:00:25.119Z - normal: Start build-assets in worker
-2018-11-13T04:00:25.299Z - info: Enable "内联所有 SpriteFrame" in native platform will increase the package size used in hot update.
-2018-11-13T04:00:26.152Z - normal: Finish build-assets in worker
-2018-11-13T04:00:26.161Z - normal: Finish building assets
-2018-11-13T04:00:26.196Z - normal: Start building plugin scripts
-2018-11-13T04:00:26.206Z - normal: Generating main.js from C:\CocosCreator\resources\static\build-templates\shares\main.js
-2018-11-13T04:00:27.805Z - normal: Built to "D:\CocosCreator\HardestGameBuild\jsb-default" successfully
-2018-11-13T04:00:32.133Z - normal: Start to compile native project. Please wait...
-2018-11-13T04:00:32.133Z - normal: The log file path [ C:\Users\Administrator.SKY-20180829QBE\.CocosCreator\logs\native.log ]
-2018-11-13T04:02:17.442Z - normal: Compile native project successfully.
-2018-11-13T04:19:12.676Z - normal: Start to compile native project. Please wait...
-2018-11-13T04:19:12.679Z - normal: The log file path [ C:\Users\Administrator.SKY-20180829QBE\.CocosCreator\logs\native.log ]
-2018-11-13T04:20:24.758Z - normal: Compile native project successfully.
-2018-11-13T04:40:18.628Z - normal: Start to compile native project. Please wait...
-2018-11-13T04:40:18.629Z - normal: The log file path [ C:\Users\Administrator.SKY-20180829QBE\.CocosCreator\logs\native.log ]
-2018-11-13T04:41:52.057Z - normal: Compile native project successfully.
-2018-11-13T04:45:53.763Z - normal: Start to compile native project. Please wait...
-2018-11-13T04:45:53.764Z - normal: The log file path [ C:\Users\Administrator.SKY-20180829QBE\.CocosCreator\logs\native.log ]
-2018-11-13T04:59:29.930Z - normal: Compile native project successfully.
-2018-11-13T06:19:55.513Z - info: shutdown preview server
+2018-11-16T11:34:50.997Z - normal: Load ~/.CocosCreator/settings.json
+2018-11-16T11:34:51.000Z - normal: checking language setting...
+2018-11-16T11:34:51.000Z - normal: Language: zh
+2018-11-16T11:34:51.402Z - success: protocol editor-framework registered
+2018-11-16T11:34:51.402Z - success: protocol app registered
+2018-11-16T11:34:51.403Z - success: protocol theme registered
+2018-11-16T11:34:51.403Z - success: protocol packages registered
+2018-11-16T11:34:51.403Z - success: protocol unpack registerred
+2018-11-16T11:34:51.403Z - success: protocol disable-commonjs registerred
+2018-11-16T11:34:51.607Z - normal: connected!
+2018-11-16T11:34:51.610Z - normal: Check project /Users/upbins/CodeProject/CreatorProject/HardestGame
+2018-11-16T11:34:51.613Z - normal: Initializing project /Users/upbins/CodeProject/CreatorProject/HardestGame
+2018-11-16T11:34:51.618Z - normal: Initializing Cocos2d
+2018-11-16T11:34:52.243Z - normal: Initializing Asset Database
+2018-11-16T11:34:52.273Z - success: protocol uuid registerred
+2018-11-16T11:34:52.273Z - success: protocol db registerred
+2018-11-16T11:34:52.273Z - success: protocol thumbnail registerred
+2018-11-16T11:34:52.273Z - normal: Loading editor/builtin packages
+2018-11-16T11:34:52.412Z - success: assets loaded
+2018-11-16T11:34:52.416Z - success: builder loaded
+2018-11-16T11:34:52.419Z - success: cocos-analytics loaded
+2018-11-16T11:34:52.423Z - success: console loaded
+2018-11-16T11:34:52.453Z - success: fb-instant-games loaded
+2018-11-16T11:34:52.459Z - success: hierarchy loaded
+2018-11-16T11:34:52.462Z - success: inspector loaded
+2018-11-16T11:34:52.464Z - success: keystore loaded
+2018-11-16T11:34:52.468Z - success: node-library loaded
+2018-11-16T11:34:52.470Z - success: package-asset loaded
+2018-11-16T11:34:52.471Z - success: preferences loaded
+2018-11-16T11:34:52.474Z - success: project-exporter loaded
+2018-11-16T11:34:52.487Z - success: project-importer loaded
+2018-11-16T11:34:52.490Z - success: project-settings loaded
+2018-11-16T11:34:52.497Z - success: ui-kit loaded
+2018-11-16T11:34:52.501Z - success: scene loaded
+2018-11-16T11:34:52.502Z - success: sprite-editor loaded
+2018-11-16T11:34:52.506Z - success: store loaded
+2018-11-16T11:34:52.511Z - success: timeline loaded
+2018-11-16T11:34:52.511Z - normal: Loading builtin packages
+2018-11-16T11:34:52.515Z - success: asset-db-debugger loaded
+2018-11-16T11:34:52.516Z - success: color-picker loaded
+2018-11-16T11:34:52.517Z - success: jsb-adapter loaded
+2018-11-16T11:34:52.521Z - success: package-manager loaded
+2018-11-16T11:34:52.590Z - success: qqplay-adapter loaded
+2018-11-16T11:34:52.596Z - success: sdkbox loaded
+2018-11-16T11:34:52.602Z - success: tester loaded
+2018-11-16T11:34:52.608Z - success: ui-grid loaded
+2018-11-16T11:34:52.612Z - success: ui-kit-preview-extra loaded
+2018-11-16T11:34:52.617Z - success: ui-kit-preview loaded
+2018-11-16T11:34:52.622Z - success: ui-tree loaded
+2018-11-16T11:34:52.623Z - success: weapp-adapter loaded
+2018-11-16T11:34:53.435Z - normal: Loading packages
+2018-11-16T11:34:53.442Z - normal: Watching packages
+2018-11-16T11:34:53.503Z - normal: Run Application
+2018-11-16T11:34:56.302Z - success: preview server running at http://localhost:7456

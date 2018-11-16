@@ -104,7 +104,15 @@ cc.Class({
         this.LevelArray = CacheObjects.LevelInfo
         CacheObjects.GameObject = this;
         this.UnitTools = new UnitTools()
+        
         this.GameStart()
+        // this.node.schedule(function () {
+            
+        // },1)
+        // this.UpdateTimer = function () {
+        //     cc.log("===>定时器11111")
+        // }.bind(this)
+        // this.schedule(this.UpdateTimer,1)
     },
     InitLevelUi(level) {
         if (level > this.length) {
@@ -132,6 +140,7 @@ cc.Class({
         this.SpeedTime = undefined  //突然变速时间
         this.UpdateTime = 0;//用于基于突然转向
         this.QuickTime = 0;//减速之后多久变灰正常
+        this.Dir = 1
         this.QuickStandTime = undefined
         this.circle = cc.find("circle", LevelUi); 
         this.WaterNode = cc.find("WaterNode",LevelUi);
@@ -155,6 +164,7 @@ cc.Class({
         this.LimitTime = LevelArray.Time
         this.Waitnum = LevelArray.TagetNum
         this.IsReturn = LevelArray.IsReturn
+        this.ChangeSpeed = LevelArray.ChangeSpeed
         this.TrunAngle = 0
         this.CurLimitNum = 0
         this.UpdateLimitNum(0)
@@ -176,7 +186,6 @@ cc.Class({
         if (this.timer) {
             this.unschedule(this.timer)
         }
-
         //超时tick
         this.TimeLabel.getComponent(cc.Label).string = time;
         this.timer = function () {
@@ -190,7 +199,7 @@ cc.Class({
                 this.GameOver()
             }
         }.bind(this);
-        this.schedule(this.timer, 1, this.LimitTime-1, 0);
+        this.schedule(this.timer, 1);
     },
     //更新当前插中数字的
     UpdateLimitNum(num){
@@ -376,46 +385,66 @@ cc.Class({
         //翻转
         if (this.IsReturn) {
             if (this.DirTime == undefined){
-                   this.IsSlow = false
-                this.DirTime = this.ChangeUpdateTime + this.UnitTools.random(100,300)
+
+                this.DirTime = this.ChangeUpdateTime + this.UnitTools.random(200,300)
             }
             this.UpdateTime+=1
             if (this.UpdateTime >= this.DirTime ) {
-                if (!this.IsSlow) {
-                    this.IsSlow = true
-                    this.OffsetAngle = -(this.OffsetAngle + this.UnitTools.random(1,2))
+                if (this.Dir == 1){  //证明现在是顺时针
+                    this.OffsetAngle -= this.ChangeSpeed
+                    if (this.OffsetAngle <= 0) {
+                        this.Dir = 2
+                        this.OffsetAngle = -this.TempOffsetAngle
+                        this.DirTime = undefined
+                        this.UpdateTime = 0
+                    }
                 }
+                else if(this.Dir == 2)
+                {    
+                    this.OffsetAngle += this.ChangeSpeed
+                    if (this.OffsetAngle >= 0) {
+                         this.Dir = 1
+                         this.OffsetAngle = this.TempOffsetAngle
+                         this.DirTime = undefined
+                         this.UpdateTime = 0
+                     }
+                }
+                // if (!this.IsSlow) {
+                //     this.IsSlow = true
+                //     this.OffsetAngle = -(this.OffsetAngle)
+                // }
             }
         }
-        if (this.IsSlow){
-            //突然旋转的时候突然减速
-            if (this.QuickStandTime == undefined) {
-                this.QuickStandTime = this.UnitTools.random(10, 20)
-            }
-            this.QuickTime += 1
-            if (Math.abs(this.QuickTime) >= this.QuickStandTime) {
-                if (this.OffsetAngle > 0) {
-                    this.OffsetAngle = this.TempOffsetAngle
-                } else {
-                    this.OffsetAngle = -this.TempOffsetAngle
-                }
-                this.DirTime = undefined
-                this.UpdateTime = 0
-                this.QuickTime = 0
-                this.IsSlow = false
-                this.QuickStandTime = undefined
-            }
+        // if (this.IsSlow){
+        //     //突然旋转的时候突然减速
+        //     if (this.QuickStandTime == undefined) {
+        //         this.QuickStandTime = this.UnitTools.random(10, 20)
+        //     }
+        //     this.QuickTime += 1
+
+        //     if (Math.abs(this.QuickTime) >= this.QuickStandTime) {
+        //         if (this.OffsetAngle > 0) {
+        //             this.OffsetAngle = this.TempOffsetAngle
+        //         } else {
+        //             this.OffsetAngle = -this.TempOffsetAngle
+        //         }
+        //         this.DirTime = undefined
+        //         this.UpdateTime = 0
+        //         this.QuickTime = 0
+        //         this.IsSlow = false
+        //         this.QuickStandTime = undefined
+        //     }
             
-        }
+        // }
         
     },
     //更新位置
     update(dt) {
         if (!this.isPause) {
-            if (!this.isOver){
-                if (this.IsInit){
+            if (!this.isOver) {
+                if (this.IsInit) {
                     this.ChangeRandomDir()
-                    this.TrunAngle =  this.TrunAngle + this.OffsetAngle //每帧转动
+                    this.TrunAngle = this.TrunAngle + this.OffsetAngle //每帧转动
                     this.circle.rotation = this.TrunAngle;
                     this.bulletNode.rotation = this.TrunAngle;
                 }
