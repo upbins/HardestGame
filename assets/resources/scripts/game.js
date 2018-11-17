@@ -64,13 +64,17 @@ cc.Class({
     start() {
  
         this.RightButtonOn = false
-        this.node.on(cc.Node.EventType.MOUSE_DOWN, this.onMouseDown, this.node);
-        this.node.on(cc.Node.EventType.MOUSE_UP, this.onMouseUp, this.node);
-        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.OnKeyBackUp, this.node);
+        // cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN,this.onMouseDown,this); // onLoad 在ＵＩ线程监听　　而callback在事件线程调用　　　第三个参数为线程传参
+        // cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP,this.onMouseUp,this);
+        this.node.on(cc.Node.EventType.MOUSE_DOWN, this.onMouseDown, this);
+        this.node.on(cc.Node.EventType.MOUSE_UP, this.onMouseUp, this);
+        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.OnKeyBackUp, this);
         this.InitConfig();
     },
     onDestroy () {
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_UP, this.OnKeyBackUp, this);
+        this.node.off(cc.Node.EventType.MOUSE_DOWN, this.onMouseDown, this);
+        this.node.off(cc.Node.EventType.MOUSE_UP, this.onMouseUp, this);
     },
     OnKeyBackUp:function(event){
         if(cc.sys.os == cc.sys.OS_ANDROID){ 
@@ -86,17 +90,15 @@ cc.Class({
     },
     onMouseDown: function(event) {
         var mouseType = event.getButton();
-        if (mouseType === cc.Event.EventMouse.BUTTON_RIGHT) {
+        if (mouseType === 1) {
             this.RightButtonOn = true
-            //cc.log("=======鼠标右键按下")
         }
     },
     onMouseUp: function(event) {
         var mouseType = event.getButton();
-        if (mouseType === cc.Event.EventMouse.BUTTON_RIGHT) {
+        if (mouseType === 1) {
             // 鼠标右键释放
             cc.director.end()
-            //cc.log("=======鼠标右键释放")
         }
     },
     // //初始化相关关卡数据
