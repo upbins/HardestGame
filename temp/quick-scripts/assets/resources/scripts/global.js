@@ -9,6 +9,7 @@ module.exports = {
     CollsionTypeZero: 0, //圆圈tag
     CollsionTypeOne: 1, //发射的子弹
     CollsionTypeTwo: 2, //依靠的子弹
+    TryGamePlay: true, //是否是试玩
     LevelInfo: [{
         "TagetNum": 10,
         "Time": 60,

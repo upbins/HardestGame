@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "unable_bg",
+    "texture": "8eb411dc-f421-4d19-b829-3ed7f1b02c78",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      100,
+      60
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      100,
+      60
+    ]
+  }
+}

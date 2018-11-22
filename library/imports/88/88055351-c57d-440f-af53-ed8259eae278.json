@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "try_game",
+    "texture": "fbade961-93b2-42e7-8211-6303d8252067",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      285,
+      103
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      285,
+      103
+    ]
+  }
+}

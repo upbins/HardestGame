@@ -28,6 +28,10 @@ cc.Class({
         TimeLablePrefab:cc.Prefab,
         TopAd:cc.Node,
         BottomAd:cc.Node,
+        ShootLabel:cc.Node,
+        StartLayout:cc.Node,
+        StartButton:cc.Button,
+        TryButton:cc.Button,
         BulletAudio: {
             default: null,
             type: cc.AudioClip
@@ -66,17 +70,41 @@ cc.Class({
         this.RightButtonOn = false
         // cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN,this.onMouseDown,this); // onLoad 在ＵＩ线程监听　　而callback在事件线程调用　　　第三个参数为线程传参
         // cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP,this.onMouseUp,this);
-        this.node.on(cc.Node.EventType.MOUSE_DOWN, this.onMouseDown, this);
-        this.node.on(cc.Node.EventType.MOUSE_UP, this.onMouseUp, this);
-        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.OnKeyBackUp, this);
+        // this.node.on(cc.Node.EventType.MOUSE_DOWN, this.onMouseDown, this.node);
+        // this.node.on(cc.Node.EventType.MOUSE_UP, this.onMouseUp, this.node);
+        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.OnKeyBackUp, this);
+        // CreatorHelper.setNodeClickEvent(this.ShootLabel, function () {
+        //     cc.director.end()
+        // })
+        // CreatorHelper.setNodeClickEvent(this.StartButton, function () {
+        //     CacheObjects.IsTryGame = false
+        //     this.InitConfig();
+        // })
+        // CreatorHelper.setNodeClickEvent(this.TryButton, function () {
+        //     CacheObjects.IsTryGame = true
+        //     this.InitConfig();
+        // })
+        
+    },
+    StartGame(){
+        cc.log("========>")
+        this.StartLayout.active = false
+        CacheObjects.IsTryGame = false
+        this.InitConfig();
+    },
+    TryGame(){
+        this.StartLayout.active = false
+        CacheObjects.IsTryGame = true
         this.InitConfig();
     },
     onDestroy () {
-        cc.systemEvent.off(cc.SystemEvent.EventType.KEY_UP, this.OnKeyBackUp, this);
+        cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.OnKeyBackUp, this);
         this.node.off(cc.Node.EventType.MOUSE_DOWN, this.onMouseDown, this);
         this.node.off(cc.Node.EventType.MOUSE_UP, this.onMouseUp, this);
     },
     OnKeyBackUp:function(event){
+        cc.log("=============================>",event.keyCode)
+        this.ShootLabel.getComponent(cc.Label).string  = event.keyCode
         if(cc.sys.os == cc.sys.OS_ANDROID){ 
             switch(event.keyCode) {
                 case cc.macro.keyCode.back:
@@ -90,12 +118,16 @@ cc.Class({
     },
     onMouseDown: function(event) {
         var mouseType = event.getButton();
+        cc.log("==========================>onMouseDown",mouseType)
+        this.MouseLabel.getComponent(cc.Label).string  = mouseType
         if (mouseType === 1) {
             this.RightButtonOn = true
         }
     },
     onMouseUp: function(event) {
         var mouseType = event.getButton();
+        cc.log("==========================>onMouseUp",mouseType)
+        this.MouseLabel.getComponent(cc.Label).string  = mouseType
         if (mouseType === 1) {
             // 鼠标右键释放
             cc.director.end()
@@ -320,8 +352,13 @@ cc.Class({
             CreatorHelper.setNodeClickEvent(self.NextBtn, function () {
                 self.IsSuccess = false
                 cc.audioEngine.stop(self.SuccessCurrentAudio)
-                self.level += 1;
-                self.InitLevelUi(self.level)
+                if (CacheObjects.IsTryGame == true){
+                    self.StartLayout.active = true
+                }else{
+                    self.level += 1;
+                    self.InitLevelUi(self.level)
+                }
+               
               })
         }
     },
@@ -338,7 +375,8 @@ cc.Class({
                 self.FailAlert.active = false
                 
                 cc.audioEngine.stop(self.FailAudioCurrentAudio)
-                self.InitLevelUi(1)
+                self.StartLayout.active = true
+                //self.InitLevelUi(1)
             })
         }
     },
@@ -368,7 +406,6 @@ cc.Class({
                     if (!self.isOver) {
                         if (self.IsInit){
                             if (!self.RightButtonOn){
-                                cc.log("@=================>")
                                 self.Bullet.active = true
                                 var MoveAction = cc.moveTo(0.5,cc.p(self.bulletNode.x,self.bulletNode.y)).easing(cc.easeSineOut()); 
                                 self.Bullet.runAction(MoveAction)

@@ -30,7 +30,7 @@
     "relativePath": "resources"
   },
   "62c8d2d0-a1bd-42a8-a012-dda51a07afa4": {
-    "asset": 1542370230762,
+    "asset": 1542801826364,
     "meta": 1541726349949,
     "relativePath": "resources\\scripts"
   },
@@ -85,7 +85,7 @@
     "relativePath": "resources\\level\\5"
   },
   "df3f0c93-32f1-40d0-936b-9e4cba0973de": {
-    "asset": 1542370230769,
+    "asset": 1542808658817,
     "meta": 1541380798105,
     "relativePath": "resources\\tips"
   },
@@ -220,8 +220,8 @@
     "relativePath": "resources\\alert\\fail_bg.png"
   },
   "9ecebd2d-32fb-404f-a185-05e22291ad62": {
-    "asset": 1542435251997,
-    "meta": 1542435252010,
+    "asset": 1542869570376,
+    "meta": 1542869570383,
     "relativePath": "resources\\game.fire"
   },
   "ace18879-b94b-4ed3-bc4e-f2f7bacef13b": {
@@ -463,11 +463,6 @@
     "asset": 1541380798112,
     "meta": 1542370257410,
     "relativePath": "resources\\tips\\ready_go.png"
-  },
-  "687093ee-b8a3-4405-85af-81fa2e2e9ee1": {
-    "asset": 1541726349949,
-    "meta": 1542370257220,
-    "relativePath": "resources\\scripts\\CreatorHelper.js"
   },
   "71902a17-c520-4769-8e6b-70d298d8843f": {
     "asset": 1541639854505,
@@ -734,14 +729,69 @@
     "meta": 1542370256187,
     "relativePath": "resources\\level\\1\\water1.png"
   },
-  "0fd1b116-44fe-437a-9000-a25cc96df917": {
-    "asset": 1542370230762,
-    "meta": 1542370257266,
-    "relativePath": "resources\\scripts\\global.js"
+  "687093ee-b8a3-4405-85af-81fa2e2e9ee1": {
+    "asset": 1542803077151,
+    "meta": 1542803078476,
+    "relativePath": "resources\\scripts\\CreatorHelper.js"
+  },
+  "717b17eb-5367-4f92-9c71-1d41c71fa39b": {
+    "asset": 1542808658802,
+    "meta": 1542808658866,
+    "relativePath": "resources\\tips\\normal_btn.png"
+  },
+  "1a6c72d3-ac82-420d-8dd2-e659552c2043": {
+    "asset": 1542808658802,
+    "meta": 1542808658868,
+    "relativePath": "resources\\tips\\game_btn.png"
+  },
+  "e5364b92-b792-4065-9f03-0d6d4f1468f1": {
+    "asset": 1542808658802,
+    "meta": 1542808658897,
+    "relativePath": "resources\\tips\\item_title.png"
+  },
+  "77c9b86a-d398-45e0-8c4e-ae47bf507513": {
+    "asset": 1542808658802,
+    "meta": 1542808658898,
+    "relativePath": "resources\\tips\\select_btn.png"
+  },
+  "fbade961-93b2-42e7-8211-6303d8252067": {
+    "asset": 1542808658802,
+    "meta": 1542808658913,
+    "relativePath": "resources\\tips\\try_game.png"
+  },
+  "ff3517a9-36ee-42c0-b9ca-4aa1a27c8c14": {
+    "asset": 1542808658802,
+    "meta": 1542808658915,
+    "relativePath": "resources\\tips\\step.png"
+  },
+  "0a8902bb-1994-47f7-97f0-aca90f8067be": {
+    "asset": 1542808658802,
+    "meta": 1542808658927,
+    "relativePath": "resources\\tips\\start_game.png"
+  },
+  "8eb411dc-f421-4d19-b829-3ed7f1b02c78": {
+    "asset": 1542808658803,
+    "meta": 1542808658929,
+    "relativePath": "resources\\tips\\unable_bg.png"
+  },
+  "438ac67e-0fe0-432d-bfa7-2dc06e686055": {
+    "asset": 1542808658803,
+    "meta": 1542808658952,
+    "relativePath": "resources\\tips\\apply_bg.png"
+  },
+  "c0caa2c6-41dd-4e1c-a5cb-873dac30cfba": {
+    "asset": 1542808658803,
+    "meta": 1542808658977,
+    "relativePath": "resources\\tips\\first_bg.png"
   },
   "3998818d-6c7d-46b0-8613-87eccb257795": {
-    "asset": 1542435255433,
-    "meta": 1542435305973,
+    "asset": 1542869483126,
+    "meta": 1542869538270,
     "relativePath": "resources\\scripts\\game.js"
+  },
+  "0fd1b116-44fe-437a-9000-a25cc96df917": {
+    "asset": 1542869468245,
+    "meta": 1542869538273,
+    "relativePath": "resources\\scripts\\global.js"
   }
 }

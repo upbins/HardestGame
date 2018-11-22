@@ -69,7 +69,7 @@
                   "console",
                   "timeline"
                 ],
-                "height": 281.015625,
+                "height": 281,
                 "type": "panel",
                 "width": 1387.984375
               }
@@ -115,9 +115,9 @@
       "height": 322
     },
     "builder": {
-      "x": 589,
+      "x": 591,
       "y": 117,
-      "width": 500,
+      "width": 498,
       "height": 722
     },
     "preferences": {
@@ -125,6 +125,12 @@
       "y": 246,
       "width": 600,
       "height": 564
+    },
+    "project-settings": {
+      "x": 662,
+      "y": 246,
+      "width": 596,
+      "height": 558
     }
   }
 }
