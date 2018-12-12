@@ -79,9 +79,9 @@ cc.Class({
         // this.node.on(cc.Node.EventType.MOUSE_DOWN, this.onMouseDown, this.node);
         // this.node.on(cc.Node.EventType.MOUSE_UP, this.onMouseUp, this.node);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.OnKeyBackUp, this);
-        CreatorHelper.setNodeClickEvent(this.ShootLabel, function () {
-            cc.director.end();
-        });
+        // CreatorHelper.setNodeClickEvent(this.ShootLabel, function () {
+        //     cc.director.end()
+        // })
         // CreatorHelper.setNodeClickEvent(this.StartButton, function () {
         //     CacheObjects.IsTryGame = false
         //     this.InitConfig();
